@@ -20,17 +20,17 @@ Replit still has a chat interface, but instead of one LLM, it gives you access t
 
 Here's how it played out:
 
-🧠 9:00–11:00 — Brainstorming the "why"
+## 🧠 9:00–11:00 — Brainstorming the "why"
 
 Emmi and I started with ideation: What problem were we trying to solve? How did we want the user to think, feel, and respond? What should the UI/UX look like?
 
-🧾 11:00–12:00 — From whiteboard to prompting
+## 🧾 11:00–12:00 — From whiteboard to prompting
 
 With our whiteboard filled out, we snapped a photo and uploaded it into one of our Custom GPTs (already trained on a lot of our previous work). It summarized our concept and created a technical brief:
 
 "Include all the information a development team would need to create the MVP." We refined it, added details and structure, then jumped into Replit.
 
-🤖 12:00–12:30 — Agents take the wheel (and we… walk)
+## 🤖 12:00–12:30 — Agents take the wheel (and we… walk)
 
 Uploading the brief was basically the whole setup. A team of agents started breaking down our big ask into features and user stories, while the orchestrator started assigning work, without us.
 
@@ -38,13 +38,13 @@ Emmi and I looked at each other with the same question: "Now what?" From earlier
 
 During the walk, we brainstormed what we'd want to add in the second run—what we forgot to specify in the brief. After our first lap around the office, we peeked at the monitor: the architect agent had hit an issue. We decided to give it time. "Let's do another lap." Another lap later, the issue was resolved, on to the next feature. Another lap, more ideas. Our mental backlog kept growing. And then… the first run was done.
 
-✅ 12:30–1:00 — First build review + next prompt
+## ✅ 12:30–1:00 — First build review + next prompt
 
 The app was there—pretty much exactly how we described it. It executed the details of our vision, and it got creative where we lacked nuance or structure. Our walks gave us space to reflect, and within moments we captured our changes: more features, UI improvements, refinements… and started another run.
 
 "I guess we have time for lunch?"
 
-🍽️ 1:00–2:00 — Guilt-free lunch
+## 🍽️ 1:00–2:00 — Guilt-free lunch
 
 Ermioni and I both have (slightly) stakhanovite tendencies. We're guilty of eating lunch at our desks—either getting work done or going camera-off on calls while we sneak in food.
 
@@ -54,7 +54,7 @@ It was guilt-free freedom: time to catch up, and time to keep thinking about wha
 
 That's when we learned something important: the first development run is different from the ones that follow. You can start big (long prompt, lots of features), but as your vision sharpens and your requests get more demanding, you often have to go one feature at a time.
 
-🏃 2:00–4:00 — The loop: ideate → direct agents → walk → test
+## 🏃 2:00–4:00 — The loop: ideate → direct agents → walk → test
 
 Ideation, give the agents direction, take a few laps around the office.
 
@@ -62,7 +62,7 @@ We were on a roll. It was a new routine—different from any day we'd had on the
 
 Over a couple hours, we collected more feedback and user testing than we've ever gotten on Day 1 of a development project. And finally—ten runs and ten thousand steps later—we had our app.
 
-🧪 4:00–5:00 — Forks and parallel builds
+## 🧪 4:00–5:00 — Forks and parallel builds
 
 "Is this really what we're trying to build?"
 
@@ -70,7 +70,7 @@ We were presenting to Dan in an hour. Usually, questioning your work in the last
 
 We knew our agents could handle a lot in one hour. We started thinking through variations: different user experiences, different "so what's." We forked the project a couple times, and suddenly we had several teams of agents simultaneously working on separate builds—ready just in time.
 
-🎤 5:00 — The reveal
+## 🎤 5:00 — The reveal
 
 "You did THIS today?!"
 

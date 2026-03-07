@@ -20,7 +20,7 @@ What was supposed to be a fun two-hour Saturday activity turned into, as it ofte
 
 Here's what that looked like, and what it taught me.
 
-🧠 Hour 0: The part that doesn't happen in the terminal
+## 🧠 Hour 0: The part that doesn't happen in the terminal
 
 I did not start in Claude Code. I started in my Notes app.
 
@@ -40,7 +40,7 @@ Without this step, the moment I turned to Claude Code, it would have been AI set
 
 You need to be a little selfish. A little protective. These are your ideas. Define them with enough depth that AI becomes an executor of your vision, not an author of a generic one. Don't forget who's in charge.
 
-⚡ Hour 2: "Claude wants to access your..."
+## ⚡ Hour 2: "Claude wants to access your..."
 
 I opened the terminal and initialized Claude Code. Within the first fifteen minutes, it was requesting permissions to access all sorts of things on my machine. Files, directories, system configurations.
 
@@ -52,7 +52,7 @@ That's a little too much for me!
 
 If you're starting out with Claude Code for the first time, go slow. Read what it's asking before you approve. Not every permission request deserves a "yes." The speed is intoxicating, but the surface area of what you're granting access to is real. Treat permissions like you'd treat giving a new employee the keys to the building: thoughtfully, and not all on day one.
 
-🔧 Hours 2 to 4: The skill floor nobody talks about
+## 🔧 Hours 2 to 4: The skill floor nobody talks about
 
 My background is data science. I can code, but app development? Never my lane. I ended up doing about six months of real development work at the beginning of my career before reinventing myself into the AI strategy role I'm in now (but that story is for another article). Point being: I know just enough to not get lost.
 
@@ -66,7 +66,7 @@ This is a real barrier. Right now, Claude Code's power is gated behind a skill f
 
 I don't think this bar is too high for anyone. A short investment in learning the basics can go a long way. But let me tell you: those few months of development experience are the reason I didn't bounce off this tool within an hour.
 
-🚀 Hours 4 to 10: The spiral
+## 🚀 Hours 4 to 10: The spiral
 
 This is where it got dangerous, in the best way.
 
@@ -84,7 +84,7 @@ Not anymore.
 
 Fair warning, though: it gets expensive. I found myself upgrading to the Max plan ($100/month) almost instantly because I was too impatient to wait in queue. When you're six hours into a creative spiral at 11 PM on a Saturday, throttling feels like a personal offense. Budget accordingly.
 
-🌙 Hours 10 to 12: Midnight and the dust is gone
+## 🌙 Hours 10 to 12: Midnight and the dust is gone
 
 Somewhere around hour ten, I looked up from my screen. It was past midnight. I had eaten dinner at my desk. My back hurt. I was starting to get lost in the little orange "Claude is vibing" animation.
 
@@ -94,7 +94,7 @@ Not a deck. Not a strategy document. Not a prompt. An actual, working thing. Sev
 
 The dust was gone.
 
-💡 The uncomfortable question
+## 💡 The uncomfortable question
 
 Here's what I keep coming back to.
 

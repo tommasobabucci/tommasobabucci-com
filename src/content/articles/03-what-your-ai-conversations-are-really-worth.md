@@ -14,7 +14,7 @@ Why OpenAI is better positioned than most to succeed in advertising
 Why OpenAI is making this move now, and what it can mean for their overarching business model
 What it means for the AI market as a whole (the future of shopping)
 
-1. Why OpenAI is better positioned than even Amazon to succeed in advertising
+## 1. Why OpenAI is better positioned than even Amazon to succeed in advertising
 
 Amazon revolutionized advertising through data, tracking clicks, browsing patterns, and purchase history to predict what you'll buy next. The retail giant became famous for using predictive analytics so sophisticated that it could identify pregnant customers through their shopping patterns, as detailed in a 2012 New York Times investigation into Target's similar predictive models. But imagine if they had access to something even more powerful: a text field where customers voluntarily shared their deepest fears, aspirations, and daily struggles. That's ChatGPT.
 
@@ -30,7 +30,7 @@ I recently went into the memory log of my ChatGPT account. The things it remembe
 
 These two factors alone position ChatGPT to be able to reinvent digital advertising as we know it.
 
-2. Why OpenAI is making this move now, and what it can mean for their overarching business model
+## 2. Why OpenAI is making this move now, and what it can mean for their overarching business model
 
 Why now? Let's go back to September 2024 when OpenAI first announced "Shopping", the Agentic Commerce Protocol with Stripe that enabled instant checkout within the AI chatbot. By late November 2024, they rolled out shopping research features, and by April 2025, shopping capabilities had expanded globally. It's impossible for me not to see these shopping announcements and the January 2026 ads rollout as inherently linked. We serve you ads, and you can buy from here, bingo.
 
@@ -50,7 +50,7 @@ Add to this the pressure of preparing for what many expect to be one of the larg
 
 The economics of AI aren't forcing OpenAI to abandon their current business model, they're forcing them to expand it: advertising and commerce aren't replacing subscriptions, they're monetizing the 95% who won't subscribe.
 
-3. What it means for the AI market as a whole (the future of shopping)
+## 3. What it means for the AI market as a whole (the future of shopping)
 
 OpenAI releases shopping, then it begins testing ads. OpenAI is moving into the consumer world, not just of AI, but of products and experiences. I don't believe we are that far away from AI agents completing our buying for us. I am emphasizing buying instead of shopping here because I do think AI agents will likely serve a specific purpose for shoppers in the early game, a buying purpose, for utilities, for things that are repetitive and inconsequential for most: toilet paper, hangers, fertilizer sticks for your monstera, a replacement portafilter for your espresso machine. Not shopping, not treating yourself to a fancy watch for your promotion or the Hermes bag of your dreams (will an agent have its own purchase history at Hermes and Rolex?).
 

@@ -821,36 +821,63 @@
 
 /* ============================================================
    ARTICLE PROSE — rendered markdown body on article pages
+   Editorial style: Newsreader serif body, Krona One headings
    ============================================================ */
 .article-prose {
-  font-family: "Sora", sans-serif;
-  font-size: 15px;
-  line-height: 1.7;
-  font-weight: 300;
-  color: #57534E;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.78;
+  font-weight: 400;
+  color: #44403C;
+  font-optical-sizing: auto;
+}
+
+/* Drop cap — first paragraph opening letter */
+.article-prose > p:first-of-type::first-letter {
+  font-family: "Krona One", sans-serif;
+  float: left;
+  font-size: 3.4em;
+  line-height: 0.8;
+  padding-right: 10px;
+  padding-top: 6px;
+  color: #B53B2E;
 }
 
 .article-prose h2 {
   font-family: "Krona One", sans-serif;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 400;
   color: #1C1917;
-  margin-top: 48px;
-  margin-bottom: 16px;
+  margin-top: 56px;
+  margin-bottom: 24px;
   letter-spacing: -0.02em;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.article-prose h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 28px;
+  height: 2px;
+  background: #B53B2E;
+  border-radius: 1px;
 }
 
 .article-prose h3 {
   font-family: "Sora", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   color: #1C1917;
-  margin-top: 36px;
-  margin-bottom: 12px;
+  margin-top: 40px;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
 }
 
 .article-prose p {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 .article-prose a {
@@ -858,15 +885,16 @@
   text-decoration: underline;
   text-decoration-color: rgba(181, 59, 46, 0.3);
   text-underline-offset: 3px;
-  transition: text-decoration-color 0.2s ease;
+  transition: text-decoration-color 0.2s ease, background-color 0.2s ease;
 }
 
 .article-prose a:hover {
   text-decoration-color: #B53B2E;
+  background-color: rgba(181, 59, 46, 0.04);
 }
 
 .article-prose strong {
-  font-weight: 500;
+  font-weight: 600;
   color: #1C1917;
 }
 
@@ -875,29 +903,140 @@
 }
 
 .article-prose blockquote {
-  border-left: 3px solid #B53B2E;
-  padding-left: 20px;
-  margin: 32px 0;
-  color: #57534E;
+  position: relative;
+  border: none;
+  border-left: none;
+  padding: 8px 0 8px 28px;
+  margin: 40px 0;
+  font-size: 20px;
+  line-height: 1.65;
   font-style: italic;
+  color: #44403C;
+  border-left: 3px solid #B53B2E;
 }
 
-.article-prose ul, .article-prose ol {
+.article-prose blockquote p {
+  margin-bottom: 0;
+}
+
+.article-prose ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 28px;
+}
+
+.article-prose ul li {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.article-prose ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  background: #B53B2E;
+  border-radius: 1px;
+}
+
+.article-prose ol {
   padding-left: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
+  counter-reset: article-counter;
+  list-style: none;
 }
 
-.article-prose li {
-  margin-bottom: 8px;
+.article-prose ol li {
+  margin-bottom: 10px;
+  counter-increment: article-counter;
+  padding-left: 8px;
+  position: relative;
 }
 
+.article-prose ol li::before {
+  content: counter(article-counter) ".";
+  position: absolute;
+  left: -24px;
+  font-family: "Sora", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #B53B2E;
+}
+
+/* Decorative horizontal rule — three centered dots */
 .article-prose hr {
   border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.07);
-  margin: 48px 0;
+  margin: 52px 0;
+  text-align: center;
+  line-height: 0;
+}
+
+.article-prose hr::after {
+  content: "\00B7  \00B7  \00B7";
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  color: #A8A29E;
 }
 
 .article-prose img {
-  border-radius: 8px;
-  margin: 32px 0;
+  border-radius: 6px;
+  margin: 36px -24px;
+  max-width: calc(100% + 48px);
+  width: calc(100% + 48px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Article footer — disclaimer after final hr */
+.article-prose > :last-child em,
+.article-prose > p:last-of-type em {
+  font-family: "Sora", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #A8A29E;
+  font-style: italic;
+}
+
+/* References section */
+.article-prose > p > strong:only-child {
+  font-family: "Sora", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #A8A29E;
+}
+
+@media (max-width: 640px) {
+  .article-prose {
+    font-size: 17px;
+    line-height: 1.72;
+  }
+
+  .article-prose > p:first-of-type::first-letter {
+    font-size: 2.8em;
+    padding-right: 8px;
+    padding-top: 4px;
+  }
+
+  .article-prose h2 {
+    font-size: 17px;
+    margin-top: 44px;
+  }
+
+  .article-prose img {
+    margin: 28px -8px;
+    max-width: calc(100% + 16px);
+    width: calc(100% + 16px);
+  }
+
+  .article-prose blockquote {
+    font-size: 18px;
+    padding: 6px 0 6px 20px;
+    margin: 32px 0;
+  }
 }

@@ -18,7 +18,7 @@ Honest answer: yes and no.
 
 That day was a snapshot. The last month has been the real experiment. And it turns out the future is more complicated than a single exhilarating workday.
 
-🏠 Week 1: The remote reality check
+## 🏠 Week 1: The remote reality check
 
 Emmi went back to her home office. I went back to mine. We were pumped to keep building on App 3, the one that got the best feedback on Day 1. We jumped on a call, shared screens, and started our first remote agent sprint.
 
@@ -30,7 +30,7 @@ The magic of those walks wasn't just the conversation. It was the movement, the 
 
 By the end of Week 1, we'd made progress. But something had shifted. The guilt-free freedom we felt over lunch that day in January was gone. Now we felt guilty for not working while the agents worked. We'd refresh Teams, check emails, half-focus on the build. The waiting wasn't meditative anymore. It was dead time that felt like it should be repurposed for another high-value activity.
 
-⚡ Week 2: The 80/20 wall
+## ⚡ Week 2: The 80/20 wall
 
 Here's what nobody tells you about AI agents: getting from 0 to 80% is thrilling. You throw in a big, ambitious prompt, the agents break it down, and suddenly you have a working prototype. It feels like magic.
 
@@ -48,7 +48,7 @@ One afternoon, while working on a new build, I caught myself just staring. Not t
 
 "This isn't sustainable," I thought.
 
-🔀 Week 3: The context-switching breakthrough (and curse)
+## 🔀 Week 3: The context-switching breakthrough (and curse)
 
 I was midway through another agent run, fixing a date picker bug, when it hit me.
 
@@ -72,7 +72,7 @@ For the first time in weeks, I felt like we'd unlocked something. We were scalin
 
 But then the cracks started showing.
 
-🧠 Week 4: The cognitive cost
+## 🧠 Week 4: The cognitive cost
 
 By the end of the month, I had six Replit tabs open and five ChatGPT conversations. Pages of notes with prompts I still needed to run.
 
@@ -86,7 +86,7 @@ One night, I closed my laptop and realized I'd spent eight hours "managing AI ag
 
 We'd discovered a new capability, managing multiple agent teams in parallel, but we hadn't developed the discipline to do it well.
 
-🔮 What we learned (and what's still missing)
+## 🔮 What we learned (and what's still missing)
 
 A month ago, I thought the future was about letting agents do the work while we went for walks. That was true for a day. Sustaining it for a month required something different.
 
@@ -110,7 +110,7 @@ Unified triage feed: errors, completions, test failures, and "needs human input"
 
 That doesn't exist yet. So we're improvising. And honestly, some days it feels messy.
 
-🚀 But here's what does work
+## 🚀 But here's what does work
 
 Despite the chaos, Emmi and I shipped several working apps this month. Not prototypes, actual tools our team is using.
 
@@ -125,7 +125,7 @@ Remote collaboration needs new rituals. We lost the walks, but we found other rh
 Context switching is the real bottleneck. If you're going to manage multiple projects, you need systems.
 The tools will catch up. Right now, working with AI agents feels like the early days of the internet: powerful but clunky. But this is just the beginning. The UIs will improve. The orchestration will get smarter. The workflows will consolidate.
 
-💭 One month later
+## 💭 One month later
 
 That day in January felt like a glimpse of the future. This month felt like living in it.
 
