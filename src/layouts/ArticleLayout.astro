@@ -1,0 +1,77 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  date: Date;
+  tag: string;
+  coverImage?: string;
+}
+
+const { title, description, date, tag, coverImage } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  ogType="article"
+  ogImage={coverImage || '/og-image.png'}
+>
+  <article class="theme-work" style="min-height: 100vh;">
+    <!-- Back link -->
+    <nav class="mx-auto px-6 sm:px-8 md:px-12 pt-8" style="max-width: 760px;">
+      <a
+        href="/#fun-section"
+        class="type-nav inline-flex items-center gap-2 transition-colors duration-250"
+        style="color: #A8A29E;"
+      >
+        &larr; Back
+      </a>
+    </nav>
+
+    <!-- Article header -->
+    <header class="mx-auto px-6 sm:px-8 md:px-12 pt-12 pb-8" style="max-width: 760px;">
+      <div class="flex items-center gap-3 mb-6">
+        <span
+          class="type-tag"
+          style="color: #B53B2E; background: rgba(181,59,46,0.06); padding: 3px 10px; border-radius: 4px;"
+        >
+          {tag}
+        </span>
+        <span class="type-tag" style="color: #A8A29E;">{formattedDate}</span>
+      </div>
+
+      <h1 class="type-hero mb-6" style="color: #1C1917;">
+        {title}
+      </h1>
+
+      <p class="type-body-work" style="color: #57534E;">
+        {description}
+      </p>
+    </header>
+
+    <!-- Cover image -->
+    {coverImage && (
+      <div class="mx-auto px-6 sm:px-8 md:px-12 mb-12" style="max-width: 760px;">
+        <img
+          src={coverImage}
+          alt={title}
+          class="w-full rounded-lg"
+          style="aspect-ratio: 16/9; object-fit: cover;"
+        />
+      </div>
+    )}
+
+    <!-- Article body -->
+    <div class="mx-auto px-6 sm:px-8 md:px-12 pb-24 article-prose" style="max-width: 760px;">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>

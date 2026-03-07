@@ -1,0 +1,110 @@
+---
+import SectionTag from '../SectionTag.astro';
+import FadeIn from '../FadeIn.astro';
+
+const timeline = [
+  {
+    company: 'Ernst & Young',
+    period: '2022 – Present',
+    current: true,
+    role: 'Americas Consulting – AI Market Activation Lead',
+    progression: [
+      'Americas Consulting AI Strategy & Office of the Consulting CTO',
+      'Chief of Staff to the Global Consulting AI Leader',
+      'Manager',
+      'Senior Consultant',
+      'Intern',
+    ],
+    details: [],
+  },
+  {
+    company: 'USC Marshall M.S.B.A.',
+    period: '2021 – 2022',
+    current: false,
+    role: 'Data Science and Big Data Strategy',
+    progression: [],
+    details: [
+      'Business Analytics Student Association President',
+      'Head Teaching Assistant for Statistics Department',
+    ],
+  },
+  {
+    company: 'OmniShopper',
+    period: '2021 – 2023',
+    current: false,
+    role: 'Data Science Advisor',
+    progression: [],
+    details: ['Launched new AI offerings'],
+  },
+  {
+    company: 'Sellics',
+    period: '2020 – 2021',
+    current: false,
+    role: 'ML Strategic Account Manager',
+    progression: [],
+    details: ['Podcaster'],
+  },
+  {
+    company: 'Duke University',
+    period: '2016 – 2020',
+    current: false,
+    role: 'B.S. in Economics, Psychology, and Innovation & Entrepreneurship',
+    progression: [],
+    details: [
+      'Editor in Chief of FORM Magazine',
+      'Published Economic Research',
+    ],
+  },
+];
+---
+
+<div>
+  <SectionTag label="Experience" theme="work" />
+
+  <div class="timeline">
+    {timeline.map((entry, i) => (
+      <FadeIn direction="left" delay={i * 0.06}>
+        <div class={`timeline-entry${entry.current ? ' timeline-entry--current' : ''}`}>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+            <h3 class="type-card-title" style="color: #1C1917;">
+              {entry.company}
+            </h3>
+            <span class="type-tag flex-shrink-0" style="color: #A8A29E;">
+              {entry.period}
+            </span>
+          </div>
+
+          <p class="type-tag mb-3" style="color: #B53B2E;">
+            {entry.role}
+          </p>
+
+          {/* Career progression — vertical ascent with progressive reveal */}
+          {entry.progression.length > 0 && (
+            <div style="display: flex; flex-direction: column; gap: 2px; margin: 4px 0 8px; padding-left: 2px;">
+              {entry.progression.map((role: string, j: number) => {
+                const total = entry.progression.length;
+                const isFirst = j === 0;
+                const fade = 1 - (j / (total - 1)) * 0.65;
+                return (
+                  <p style={`font-family: 'Sora', sans-serif; font-size: ${isFirst ? '14px' : '13px'}; font-weight: ${isFirst ? '500' : '300'}; color: ${isFirst ? '#1C1917' : '#57534E'}; line-height: 1.7; margin: 0; opacity: ${isFirst ? 1 : fade};`}>
+                    {role}
+                  </p>
+                );
+              })}
+            </div>
+          )}
+
+          {entry.details.length > 0 && (
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              {entry.details.map((detail: string) => (
+                <li class="type-body-work" style="color: #57534E; font-size: 16px; margin-bottom: 4px; line-height: 1.6;">
+                  {detail}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </FadeIn>
+    ))}
+  </div>
+</div>

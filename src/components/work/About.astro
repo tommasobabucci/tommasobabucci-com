@@ -1,0 +1,125 @@
+---
+import SectionTag from '../SectionTag.astro';
+import FadeIn from '../FadeIn.astro';
+---
+
+<div>
+  <SectionTag label="About" theme="work" />
+
+  <FadeIn>
+    <!-- Intro card: photo + name/role -->
+    <div class="about-intro">
+      <img
+        src="/images/headshot.jpg"
+        alt="Tommaso Babucci"
+        class="about-photo"
+      />
+      <div class="about-intro-text">
+        <h2 style="font-family: 'Krona One', sans-serif; font-size: 24px; font-weight: 400; color: #1C1917; line-height: 1.25; margin-bottom: 8px;">
+          Tommaso Babucci
+        </h2>
+        <p style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 500; color: #B53B2E; letter-spacing: 0.03em;">
+          AI Strategy &amp; Development &mdash; Ernst &amp; Young
+        </p>
+      </div>
+    </div>
+
+    <!-- Bio accordion (exclusive — only one open at a time) -->
+    <div class="bio-accordion type-body-work" style="color: #57534E;">
+      <!-- Now (open by default) -->
+      <div class="bio-accordion-item">
+        <button class="bio-accordion-trigger" aria-expanded="true">
+          <span class="bio-accordion-label">Now</span>
+          <span class="bio-accordion-icon" style="transform: rotate(45deg);">+</span>
+        </button>
+        <div class="bio-accordion-body is-open">
+          <p>
+            Day to day, I bring together a cross-functional team of strategists, developers, designers
+            and marketers creating and scaling new AI narratives and offerings globally. The work ranges
+            from product development and tech partnerships to AI training for a 120,000-person organization
+            and speaking at industry events around the world. The mission: helping EY transform into an
+            AI-native organization.
+          </p>
+        </div>
+      </div>
+
+      <!-- Journey -->
+      <div class="bio-accordion-item">
+        <button class="bio-accordion-trigger" aria-expanded="false">
+          <span class="bio-accordion-label">Journey</span>
+          <span class="bio-accordion-icon">+</span>
+        </button>
+        <div class="bio-accordion-body">
+          <p>
+            The journey started on the other side of the table, as one of EY's first GenAI developers
+            building custom AI products for clients in consumer and automotive. Before that, a machine
+            learning startup optimizing Amazon advertising. Once you learn to sell the car, you want to
+            learn how to build it. That led to <strong style="color: #1C1917;">USC Marshall</strong>
+            for a Master's in Business Analytics, where I still serve on the Board of Advisors.
+          </p>
+        </div>
+      </div>
+
+      <!-- Origin -->
+      <div class="bio-accordion-item">
+        <button class="bio-accordion-trigger" aria-expanded="false">
+          <span class="bio-accordion-label">Origin</span>
+          <span class="bio-accordion-icon">+</span>
+        </button>
+        <div class="bio-accordion-body">
+          <p>
+            But before the code, the consulting, the keynotes, there was a magazine. Moved from Milan
+            to <strong style="color: #1C1917;">Duke University</strong> and ended up leading a 120-person
+            creative team. That's where the instinct for storytelling and building new things rooted and grew.
+          </p>
+        </div>
+      </div>
+
+      <!-- Too much information -->
+      <div class="bio-accordion-item">
+        <button class="bio-accordion-trigger" aria-expanded="false">
+          <span class="bio-accordion-label">Too much information</span>
+          <span class="bio-accordion-icon">+</span>
+        </button>
+        <div class="bio-accordion-body">
+          <p>
+            Avid if inconsistent reader. Curiosity rabbit holes have taught me about tea ceremonies,
+            regenerative agriculture, and Brazilian jiu-jitsu. My wife calls me her &ldquo;personal ChatGPT&rdquo;.
+            I love to cook. Have worked and lived in Italy, the UK, and the US.
+          </p>
+        </div>
+      </div>
+    </div>
+  </FadeIn>
+</div>
+
+<!-- Bio accordion: exclusive behavior (only one open at a time) -->
+<script is:inline>
+  (function() {
+    document.querySelectorAll('.bio-accordion-trigger').forEach(function(trigger) {
+      trigger.addEventListener('click', function() {
+        var acc = this.closest('.bio-accordion');
+        var body = this.nextElementSibling;
+        var wasOpen = body.classList.contains('is-open');
+
+        // Close all sections
+        acc.querySelectorAll('.bio-accordion-body').forEach(function(b) {
+          b.classList.remove('is-open');
+        });
+        acc.querySelectorAll('.bio-accordion-icon').forEach(function(icon) {
+          icon.style.transform = 'rotate(0deg)';
+        });
+        acc.querySelectorAll('.bio-accordion-trigger').forEach(function(t) {
+          t.setAttribute('aria-expanded', 'false');
+        });
+
+        // Toggle this one (open if it wasn't already)
+        if (!wasOpen) {
+          body.classList.add('is-open');
+          this.setAttribute('aria-expanded', 'true');
+          this.querySelector('.bio-accordion-icon').style.transform = 'rotate(45deg)';
+        }
+      });
+    });
+  })();
+</script>

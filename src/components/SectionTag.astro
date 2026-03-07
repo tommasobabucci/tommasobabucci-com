@@ -1,0 +1,11 @@
+---
+interface Props {
+  label: string;
+  theme?: 'work' | 'fun';
+}
+
+const { label, theme = 'work' } = Astro.props;
+const color = theme === 'work' ? '#B53B2E' : '#9B9892';
+---
+
+<p class="type-subsection-heading" style={`color: ${color}; margin-bottom: 40px;`}>{label}</p>

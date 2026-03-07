@@ -1,0 +1,177 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionTag from '../components/SectionTag.astro';
+
+// Work components
+import About from '../components/work/About.astro';
+import SkillAccordion from '../components/work/SkillAccordion.tsx';
+import Experience from '../components/work/Experience.astro';
+import Contact from '../components/work/Contact.astro';
+
+// Fun components
+import ContentGrid from '../components/fun/ContentGrid.tsx';
+
+// Content data
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articles', ({ data }) => data.published);
+
+let allProjects: any[] = [];
+try {
+  allProjects = await getCollection('projects', ({ data }) => data.published);
+} catch {
+  // No project files yet
+}
+
+const contentItems = [
+  ...allArticles.map((article) => ({
+    slug: article.id.replace(/\.mdx?$/, ''),
+    title: article.data.title,
+    description: article.data.description,
+    date: article.data.date.toISOString(),
+    contentType: 'Article' as const,
+    subjectTags: article.data.tags.length > 0 ? article.data.tags : [article.data.tag],
+    coverImage: article.data.coverImage,
+    externalUrl: article.data.externalUrl,
+    href: article.data.externalUrl || `/articles/${article.id.replace(/\.mdx?$/, '')}/`,
+  })),
+  ...allProjects.map((project) => ({
+    slug: project.id.replace(/\.mdx?$/, ''),
+    title: project.data.title,
+    description: project.data.description,
+    date: null as string | null,
+    contentType: 'Project' as const,
+    subjectTags: project.data.tags || [],
+    coverImage: project.data.coverImage,
+    externalUrl: undefined,
+    href: `/projects/${project.id.replace(/\.mdx?$/, '')}/`,
+  })),
+];
+
+const skills = [
+  {
+    name: 'AI Strategy',
+    description:
+      'Designing how organizations adopt, scale, and change with AI. Not just the roadmap, but the hard decisions along the way: how to build and buy technology, designing the operating model, where AI changes the business model, and how to move a 120,000-person organization from AI-curious to AI-native. This is the work that gets me out of bed.',
+    tags: ['Enterprise AI', 'Transformation', 'AI-Native Ops', 'Business Model Design'],
+  },
+  {
+    name: 'Product Development',
+    description:
+      "Started as one of EY's first GenAI developers. Grown into a product owner, manager, and architect, now designing Service as a Software offerings. Shipped on both levels: enterprise scale and local vibecoded masterpieces.",
+    tags: ['Agentic Architect', 'Product Management', 'Service as a Software'],
+  },
+  {
+    name: 'Storytelling & Experience Design',
+    description:
+      'The passion for creative work that started with leading a 120-person magazine never went away. Today it shows up in how AI narratives get shaped, how new AI offerings are taken to market, and how complex and new ideas are made accessible. Good strategy deserves good storytelling.',
+    tags: ['Creative Direction', 'Narrative Design', 'Content Strategy'],
+  },
+  {
+    name: 'People & Leadership',
+    description:
+      'Leading cross-functional and global teams where strategists, developers, designers, and marketers need to move in the same direction. Standing up new global programs and partnerships with leading AI firms from zero.',
+    tags: ['Cross-Functional Leadership', 'Global Teams', 'Partnership Development'],
+  },
+  {
+    name: 'Teaching & Talent Development',
+    description:
+      'Coaching and training consultants on how to reimagine work with AI. The love for teaching started as head TA for the statistics department at USC Marshall. Now leading workshops with Fortune 500 C-Suite and providing live trainings and e-learnings to a talent pool of 120,000 at EY.',
+    tags: ['AI Training', 'Workshop Design', 'Executive Education'],
+  },
+  {
+    name: 'Thought Leadership',
+    description:
+      'Writing, speaking, and teaching about AI at the intersection of strategy and practice. Publishing on LinkedIn, producing thought leadership content for the Office of the Consulting CTO and Global AI Leader, keynoting industry events, and guest lecturing at USC Marshall, Cambridge, Oxford, and the London School of Economics.',
+    tags: ['Public Speaking', 'AI Writing', 'Executive Communications', 'Academic Teaching'],
+  },
+];
+---
+
+<BaseLayout
+  title="AI Strategy & Development"
+  description="Tommaso Babucci — AI Strategy & Development at EY. Writer, builder, Neon Nostalgia creator."
+>
+  <!-- ============================================================
+       HERO — Unified dark panel
+       ============================================================ -->
+  <section id="hero" class="hero-full">
+    <div class="hero-intro">
+      <span class="hero-intro-greeting">Ciao, Tommaso here.</span>
+      <span class="hero-intro-line"></span>
+      <span class="hero-intro-desc">Learn more about my professional experience and work in AI.</span>
+    </div>
+
+    <div class="hero-center">
+      <h1 class="type-hero text-center" style="color: #E8E6E1; font-size: clamp(32px, 4.5vw, 56px);">
+        Working<br />for Fun
+      </h1>
+      <p class="text-center mt-4" style="font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 400; color: #FF2D6F;">
+        Articles, projects &amp; experiments
+      </p>
+      <a href="#fun-section" class="hero-explore mt-8">explore</a>
+    </div>
+
+    <a href="#work-section" class="hero-work-card">
+      <div class="hero-work-card-content">
+        <span class="hero-work-card-title">Fun at Work</span>
+        <span class="hero-work-card-sub">Experience, skills &amp; contact</span>
+      </div>
+      <span class="hero-work-card-arrow">&rarr;</span>
+    </a>
+  </section>
+
+
+  <!-- ============================================================
+       FUN SECTION — "Working for Fun" (dark palette) — FIRST
+       ============================================================ -->
+  <section id="fun-section" class="theme-fun section-responsive" style="padding: 80px 0 120px;">
+    <div class="mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20" style="max-width: 1160px;">
+      <h2 class="type-section-heading mb-10 md:mb-16" style="color: #E8E6E1;">Working for Fun</h2>
+
+      <ContentGrid client:visible items={contentItems} />
+
+      <!-- Cross-section nav to Work -->
+      <div style="height: 80px;"></div>
+      <div class="flex justify-center">
+        <a href="#work-section" class="section-crossnav section-crossnav--to-work">
+          <span style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 500;">
+            Fun at Work
+          </span>
+          <span style="font-size: 16px;">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WORK SECTION — "Fun at Work" (warm palette)
+       ============================================================ -->
+  <section id="work-section" class="theme-work section-responsive" style="padding: 80px 0 120px;">
+    <div class="mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20" style="max-width: 1120px;">
+
+      <!-- About + Skills: side by side -->
+      <div class="grid grid-cols-1 lg:grid-cols-[1.15fr_1fr] gap-10 lg:gap-20">
+        <About />
+        <div class="flex flex-col">
+          <SectionTag label="Skills" theme="work" />
+          <div class="flex-1">
+            <SkillAccordion client:visible skills={skills} />
+          </div>
+        </div>
+      </div>
+
+      <div class="section-spacer" style="height: 72px;"></div>
+      <hr class="work-divider" />
+      <div class="section-spacer" style="height: 72px;"></div>
+
+      <Experience />
+
+      <div class="section-spacer" style="height: 72px;"></div>
+      <hr class="work-divider" />
+      <div class="section-spacer" style="height: 72px;"></div>
+
+      <Contact />
+    </div>
+  </section>
+</BaseLayout>

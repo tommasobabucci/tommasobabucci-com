@@ -1,0 +1,46 @@
+---
+import SectionTag from '../SectionTag.astro';
+import FadeIn from '../FadeIn.astro';
+---
+
+<div>
+  <SectionTag label="Contact" theme="work" />
+
+  <FadeIn direction="scale">
+    <p class="type-body-work mb-10" style="color: #57534E;">
+      Always interested in conversations about AI strategy, creative technology,
+      and the future of work. If something here resonated, let's talk.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a
+        href="https://www.linkedin.com/in/tommasobabucci/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-btn"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B53B2E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+          <rect x="2" y="9" width="4" height="12" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+        <span style="font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 500; color: #1C1917;">
+          LinkedIn
+        </span>
+      </a>
+
+      <a
+        href="mailto:tommaso@babucci.com"
+        class="contact-btn"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B53B2E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2" />
+          <path d="M22 7l-10 7L2 7" />
+        </svg>
+        <span style="font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 500; color: #1C1917;">
+          tommaso@babucci.com
+        </span>
+      </a>
+    </div>
+  </FadeIn>
+</div>
