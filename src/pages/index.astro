@@ -10,6 +10,7 @@ import Contact from '../components/work/Contact.astro';
 
 // Fun components
 import ContentGrid from '../components/fun/ContentGrid.tsx';
+import FadeIn from '../components/FadeIn.astro';
 
 // Content data
 import { getCollection } from 'astro:content';
@@ -93,59 +94,32 @@ const skills = [
   description="Tommaso Babucci — AI Strategy & Development at EY. Writer, builder, Neon Nostalgia creator."
 >
   <!-- ============================================================
-       HERO — Unified dark panel
+       HERO — Warm gateway with dual portal cards
        ============================================================ -->
-  <section id="hero" class="hero-full">
-    <div class="hero-intro">
-      <span class="hero-intro-greeting">Ciao, Tommaso here.</span>
-      <span class="hero-intro-line"></span>
-      <span class="hero-intro-desc">Learn more about my professional experience and work in AI.</span>
+  <section id="hero" class="hero-warm">
+    <div class="hero-content">
+      <span class="hero-greeting">Ciao, Tommaso here.</span>
+      <span class="hero-accent-line"></span>
+      <span class="hero-role">AI Strategy &amp; Development at EY.</span>
+      <span class="hero-tagline">Writer, builder, creator of things.</span>
     </div>
 
-    <div class="hero-center">
-      <h1 class="type-hero text-center" style="color: #E8E6E1; font-size: clamp(32px, 4.5vw, 56px);">
-        Working<br />for Fun
-      </h1>
-      <p class="text-center mt-4" style="font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 400; color: #FF2D6F;">
-        Articles, projects &amp; experiments
-      </p>
-      <a href="#fun-section" class="hero-explore mt-8">explore</a>
-    </div>
-
-    <a href="#work-section" class="hero-work-card">
-      <div class="hero-work-card-content">
-        <span class="hero-work-card-title">Fun at Work</span>
-        <span class="hero-work-card-sub">Experience, skills &amp; contact</span>
-      </div>
-      <span class="hero-work-card-arrow">&rarr;</span>
-    </a>
-  </section>
-
-
-  <!-- ============================================================
-       FUN SECTION — "Working for Fun" (dark palette) — FIRST
-       ============================================================ -->
-  <section id="fun-section" class="theme-fun section-responsive" style="padding: 80px 0 120px;">
-    <div class="mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20" style="max-width: 1160px;">
-      <h2 class="type-section-heading mb-10 md:mb-16" style="color: #E8E6E1;">Working for Fun</h2>
-
-      <ContentGrid client:visible items={contentItems} />
-
-      <!-- Cross-section nav to Work -->
-      <div style="height: 80px;"></div>
-      <div class="flex justify-center">
-        <a href="#work-section" class="section-crossnav section-crossnav--to-work">
-          <span style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 500;">
-            Fun at Work
-          </span>
-          <span style="font-size: 16px;">&rarr;</span>
-        </a>
-      </div>
+    <div class="hero-cards">
+      <a href="#work-section" class="portal-card portal-card--work">
+        <span class="portal-card-title">Fun at Work</span>
+        <span class="portal-card-desc">Experience, skills &amp; professional journey</span>
+        <span class="portal-card-cta">explore &rarr;</span>
+      </a>
+      <a href="#fun-section" class="portal-card portal-card--fun">
+        <span class="portal-card-title">Working for Fun</span>
+        <span class="portal-card-desc">Articles, projects &amp; experiments</span>
+        <span class="portal-card-cta">explore &rarr;</span>
+      </a>
     </div>
   </section>
 
   <!-- ============================================================
-       WORK SECTION — "Fun at Work" (warm palette)
+       WORK SECTION — "Fun at Work" (warm palette) — FIRST
        ============================================================ -->
   <section id="work-section" class="theme-work section-responsive" style="padding: 80px 0 120px;">
     <div class="mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20" style="max-width: 1120px;">
@@ -172,6 +146,42 @@ const skills = [
       <div class="section-spacer" style="height: 72px;"></div>
 
       <Contact />
+
+      <!-- Cross-section nav to Fun -->
+      <div style="height: 80px;"></div>
+      <div class="flex justify-center">
+        <a href="#fun-section" class="section-crossnav section-crossnav--to-fun">
+          <span style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 500;">
+            Working for Fun
+          </span>
+          <span style="font-size: 16px;">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FUN SECTION — "Working for Fun" (dark palette) — SECOND
+       ============================================================ -->
+  <section id="fun-section" class="theme-fun section-responsive" style="padding: 80px 0 120px;">
+    <div class="mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20" style="max-width: 1160px;">
+      <div class="fun-section-accent"></div>
+      <FadeIn>
+        <h2 class="type-section-heading mb-10 md:mb-16" style="color: #E8E6E1;">Working for Fun</h2>
+      </FadeIn>
+
+      <ContentGrid client:visible items={contentItems} />
+
+      <!-- Cross-section nav back to Work -->
+      <div style="height: 80px;"></div>
+      <div class="flex justify-center">
+        <a href="#work-section" class="section-crossnav section-crossnav--to-work">
+          <span style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 500;">
+            Fun at Work
+          </span>
+          <span style="font-size: 16px;">&larr;</span>
+        </a>
+      </div>
     </div>
   </section>
 </BaseLayout>

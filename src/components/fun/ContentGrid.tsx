@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useRef } from 'react';
+import { useState, useMemo, useEffect, useRef, useSyncExternalStore } from 'react';
 
 interface ContentItem {
   slug: string;
@@ -16,7 +16,24 @@ interface ContentGridProps {
   items: ContentItem[];
 }
 
-function ContentCard({ item }: { item: ContentItem }) {
+/* ---- Mobile detection via matchMedia ---- */
+function subscribeToMedia(callback: () => void) {
+  const mql = window.matchMedia('(max-width: 639px)');
+  mql.addEventListener('change', callback);
+  return () => mql.removeEventListener('change', callback);
+}
+
+function getIsMobile() {
+  if (typeof window === 'undefined') return false;
+  return window.matchMedia('(max-width: 639px)').matches;
+}
+
+function useIsMobile() {
+  return useSyncExternalStore(subscribeToMedia, getIsMobile, () => false);
+}
+
+/* ---- Desktop card (full vertical layout) ---- */
+function DesktopCard({ item }: { item: ContentItem }) {
   const isExternal = !!item.externalUrl;
   const formattedDate = item.date
     ? new Date(item.date).toLocaleDateString('en-US', {
@@ -32,7 +49,9 @@ function ContentCard({ item }: { item: ContentItem }) {
       target={isExternal ? '_blank' : undefined}
       rel={isExternal ? 'noopener noreferrer' : undefined}
       style={{
-        display: 'block',
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
         background: '#181A18',
         border: '1px solid rgba(255,255,255,0.07)',
         borderRadius: '12px',
@@ -53,7 +72,7 @@ function ContentCard({ item }: { item: ContentItem }) {
       }}
     >
       {item.coverImage && (
-        <div style={{ aspectRatio: '16/9', overflow: 'hidden' }}>
+        <div style={{ aspectRatio: '16/9', overflow: 'hidden', flexShrink: 0 }}>
           <img
             src={item.coverImage}
             alt={item.title}
@@ -74,7 +93,7 @@ function ContentCard({ item }: { item: ContentItem }) {
         </div>
       )}
 
-      <div style={{ padding: '24px' }}>
+      <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flex: 1 }}>
         {/* Type badge + date */}
         <div
           style={{
@@ -140,14 +159,15 @@ function ContentCard({ item }: { item: ContentItem }) {
           {item.description}
         </p>
 
-        {/* Subject tags */}
+        {/* Subject tags — pushed to bottom */}
         {item.subjectTags.length > 0 && (
           <div
             style={{
               display: 'flex',
               gap: '6px',
               flexWrap: 'wrap' as const,
-              marginTop: '4px',
+              marginTop: 'auto',
+              paddingTop: '4px',
             }}
           >
             {item.subjectTags.map((tag) => (
@@ -187,7 +207,129 @@ function ContentCard({ item }: { item: ContentItem }) {
   );
 }
 
+/* ---- Mobile card (compact horizontal layout) ---- */
+function MobileCard({ item }: { item: ContentItem }) {
+  const isExternal = !!item.externalUrl;
+  const formattedDate = item.date
+    ? new Date(item.date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+      })
+    : null;
+
+  return (
+    <a
+      href={item.href}
+      target={isExternal ? '_blank' : undefined}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
+      style={{
+        display: 'flex',
+        gap: '16px',
+        alignItems: 'center',
+        background: '#181A18',
+        border: '1px solid rgba(255,255,255,0.07)',
+        borderRadius: '10px',
+        padding: '14px',
+        transition: 'border-color 0.2s ease',
+      }}
+    >
+      {item.coverImage && (
+        <div
+          style={{
+            width: '80px',
+            height: '80px',
+            borderRadius: '8px',
+            overflow: 'hidden',
+            flexShrink: 0,
+          }}
+        >
+          <img
+            src={item.coverImage}
+            alt={item.title}
+            loading="lazy"
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+            }}
+          />
+        </div>
+      )}
+
+      <div style={{ flex: 1, minWidth: 0 }}>
+        {/* Type + date row */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            marginBottom: '6px',
+          }}
+        >
+          <span
+            style={{
+              fontFamily: '"Sora", sans-serif',
+              fontSize: '9px',
+              fontWeight: 500,
+              letterSpacing: '0.06em',
+              textTransform: 'uppercase' as const,
+              color: '#FF2D6F',
+            }}
+          >
+            {item.contentType}
+          </span>
+          {formattedDate && (
+            <>
+              <span style={{ color: '#5C5A56', fontSize: '8px' }}>&bull;</span>
+              <span
+                style={{
+                  fontFamily: '"Sora", sans-serif',
+                  fontSize: '11px',
+                  fontWeight: 400,
+                  color: '#5C5A56',
+                }}
+              >
+                {formattedDate}
+              </span>
+            </>
+          )}
+          {isExternal && (
+            <span
+              style={{
+                fontFamily: '"Sora", sans-serif',
+                fontSize: '10px',
+                color: '#5C5A56',
+                marginLeft: 'auto',
+              }}
+            >
+              &#8599;
+            </span>
+          )}
+        </div>
+
+        {/* Title — clamped to 2 lines */}
+        <h3
+          style={{
+            fontFamily: '"Krona One", sans-serif',
+            fontSize: '13px',
+            fontWeight: 400,
+            color: '#E8E6E1',
+            lineHeight: 1.35,
+            overflow: 'hidden',
+            display: '-webkit-box',
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: 'vertical' as const,
+          }}
+        >
+          {item.title}
+        </h3>
+      </div>
+    </a>
+  );
+}
+
 export default function ContentGrid({ items }: ContentGridProps) {
+  const isMobile = useIsMobile();
   const [activeType, setActiveType] = useState<string>('All');
   const [activeSubject, setActiveSubject] = useState<string>('All');
   const [filterKey, setFilterKey] = useState(0);
@@ -294,8 +436,8 @@ export default function ContentGrid({ items }: ContentGridProps) {
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(min(340px, 100%), 1fr))',
-          gap: '28px',
+          gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr',
+          gap: isMobile ? '12px' : '28px',
         }}
       >
         {sorted.map((item, i) => (
@@ -307,7 +449,11 @@ export default function ContentGrid({ items }: ContentGridProps) {
               animation: `gridCardIn 0.4s cubic-bezier(0.16,1,0.3,1) ${i * 0.06}s forwards`,
             }}
           >
-            <ContentCard item={item} />
+            {isMobile ? (
+              <MobileCard item={item} />
+            ) : (
+              <DesktopCard item={item} />
+            )}
           </div>
         ))}
       </div>
