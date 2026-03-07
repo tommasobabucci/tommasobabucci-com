@@ -99,27 +99,53 @@ const skills = [
   <section id="hero" class="hero-warm">
     <div class="hero-content">
       <span class="hero-greeting">Ciao, Tommaso here.</span>
-      <span class="hero-accent-line"></span>
       <span class="hero-role">AI Strategy &amp; Development at EY.</span>
       <span class="hero-tagline">Writer, builder, creator of things.</span>
     </div>
 
     <div class="hero-cards">
-      <a href="#work-section" class="portal-card portal-card--work">
-        <span class="portal-card-title">Fun at Work</span>
-        <span class="portal-card-desc">Experience, skills &amp; professional journey</span>
-        <span class="portal-card-cta">explore &rarr;</span>
-      </a>
       <a href="#fun-section" class="portal-card portal-card--fun">
         <span class="portal-card-title">Working for Fun</span>
         <span class="portal-card-desc">Articles, projects &amp; experiments</span>
         <span class="portal-card-cta">explore &rarr;</span>
       </a>
+      <a href="#work-section" class="portal-card portal-card--work">
+        <span class="portal-card-title">Fun at Work</span>
+        <span class="portal-card-desc">Experience, skills &amp; professional journey</span>
+        <span class="portal-card-cta">explore &rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Blue → dark diagonal transition -->
+  <div class="hero-fun-transition"></div>
+
+  <!-- ============================================================
+       FUN SECTION — "Working for Fun" (dark palette) — FIRST
+       ============================================================ -->
+  <section id="fun-section" class="theme-fun section-responsive" style="padding: 80px 0 120px;">
+    <div class="mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20" style="max-width: 1160px;">
+      <FadeIn>
+        <h2 class="type-section-heading mb-10 md:mb-16" style="color: #E8E6E1;">Working for Fun</h2>
+      </FadeIn>
+
+      <ContentGrid client:visible items={contentItems} />
+
+      <!-- Cross-section nav to Work -->
+      <div style="height: 80px;"></div>
+      <div class="flex justify-center">
+        <a href="#work-section" class="section-crossnav section-crossnav--to-work">
+          <span style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 500;">
+            Fun at Work
+          </span>
+          <span style="font-size: 16px;">&rarr;</span>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- ============================================================
-       WORK SECTION — "Fun at Work" (warm palette) — FIRST
+       WORK SECTION — "Fun at Work" (warm palette) — SECOND
        ============================================================ -->
   <section id="work-section" class="theme-work section-responsive" style="padding: 80px 0 120px;">
     <div class="mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20" style="max-width: 1120px;">
@@ -147,37 +173,12 @@ const skills = [
 
       <Contact />
 
-      <!-- Cross-section nav to Fun -->
+      <!-- Cross-section nav back to Fun -->
       <div style="height: 80px;"></div>
       <div class="flex justify-center">
         <a href="#fun-section" class="section-crossnav section-crossnav--to-fun">
           <span style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 500;">
             Working for Fun
-          </span>
-          <span style="font-size: 16px;">&rarr;</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       FUN SECTION — "Working for Fun" (dark palette) — SECOND
-       ============================================================ -->
-  <section id="fun-section" class="theme-fun section-responsive" style="padding: 80px 0 120px;">
-    <div class="mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20" style="max-width: 1160px;">
-      <div class="fun-section-accent"></div>
-      <FadeIn>
-        <h2 class="type-section-heading mb-10 md:mb-16" style="color: #E8E6E1;">Working for Fun</h2>
-      </FadeIn>
-
-      <ContentGrid client:visible items={contentItems} />
-
-      <!-- Cross-section nav back to Work -->
-      <div style="height: 80px;"></div>
-      <div class="flex justify-center">
-        <a href="#work-section" class="section-crossnav section-crossnav--to-work">
-          <span style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 500;">
-            Fun at Work
           </span>
           <span style="font-size: 16px;">&larr;</span>
         </a>
