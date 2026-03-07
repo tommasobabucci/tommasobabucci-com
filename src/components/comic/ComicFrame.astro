@@ -1,0 +1,51 @@
+---
+import FadeIn from '../FadeIn.astro';
+import DialogueBlock from './DialogueBlock.astro';
+
+interface Props {
+  number: number;
+  imageSrc: string;
+  imageAlt: string;
+  readerText: string;
+  layout: string;
+  dialogueSpeaker?: string;
+  dialogueText?: string;
+  isEager?: boolean;
+}
+
+const {
+  number,
+  imageSrc,
+  imageAlt,
+  readerText,
+  layout,
+  dialogueSpeaker,
+  dialogueText,
+  isEager = false,
+} = Astro.props;
+
+const layoutClass = `comic-frame--${layout.replace(/\s+/g, '-')}`;
+---
+
+<section class={`comic-frame ${layoutClass}`} data-frame={number}>
+  <FadeIn>
+    <div class="comic-frame-inner">
+      <div class="comic-frame-image">
+        <img
+          src={imageSrc}
+          alt={imageAlt}
+          loading={isEager ? 'eager' : 'lazy'}
+          decoding={isEager ? 'sync' : 'async'}
+          class="comic-panel-img"
+        />
+      </div>
+
+      <div class="comic-frame-text">
+        <p class="comic-prose">{readerText}</p>
+        {dialogueSpeaker && dialogueText && (
+          <DialogueBlock speaker={dialogueSpeaker} text={dialogueText} />
+        )}
+      </div>
+    </div>
+  </FadeIn>
+</section>

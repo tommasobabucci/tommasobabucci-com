@@ -1,0 +1,24 @@
+---
+interface Props {
+  speaker: string;
+  text: string;
+}
+
+const { speaker, text } = Astro.props;
+
+const speakerColors: Record<string, string> = {
+  huma: '#E8B04A',
+  vinci: '#C8A96E',
+  dali: '#FF2D6F',
+  michel: '#B87A4B',
+  rem: '#8B6914',
+  raj: '#7EB89A',
+};
+
+const color = speakerColors[speaker.toLowerCase()] || '#9B9892';
+---
+
+<blockquote class="comic-dialogue" style={`--dialogue-color: ${color};`}>
+  <span class="comic-dialogue-speaker">{speaker}</span>
+  <p class="comic-dialogue-text" set:html={`&ldquo;${text}&rdquo;`} />
+</blockquote>

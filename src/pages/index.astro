@@ -40,12 +40,14 @@ const contentItems = [
     slug: project.id.replace(/\.mdx?$/, ''),
     title: project.data.title,
     description: project.data.description,
-    date: null as string | null,
+    date: project.data.date ? project.data.date.toISOString() : null as string | null,
     contentType: 'Project' as const,
     subjectTags: project.data.tags || [],
     coverImage: project.data.coverImage,
     externalUrl: undefined,
-    href: `/projects/${project.id.replace(/\.mdx?$/, '')}/`,
+    href: project.id.replace(/\.mdx?$/, '') === 'humas-agency'
+      ? '/projects/humas-agency/'
+      : `/projects/${project.id.replace(/\.mdx?$/, '')}/`,
   })),
 ];
 

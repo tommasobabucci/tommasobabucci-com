@@ -1,0 +1,641 @@
+[
+  {
+    "number": 1,
+    "slug": "the-city-at-dawn",
+    "title": "The City at Dawn",
+    "act": "prologue",
+    "imagePath": "/volumes/vol-1/frame-01.webp",
+    "imageAlt": "Chicago 2050 lakefront at dawn — holographic billboards, drone lanes, and a solitary figure walking along the concrete path beside Lake Michigan.",
+    "aspectRatio": "3:4",
+    "readerText": "In a city where the skies are filled with small personal drones, and everyone who works on the higher floors is wearing smart contacts, infrastructure still feels like 2025. So even in 2050, Huma still walks to work.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "city",
+      "isFrameBreak": false,
+      "specialEffect": "Opening text appears slowly, word by word, before the image loads. The image fades in behind the text.",
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 2,
+    "slug": "the-walk",
+    "title": "The Walk",
+    "act": "prologue",
+    "imagePath": "/volumes/vol-1/frame-02.webp",
+    "imageAlt": "Medium shot from behind of a young woman walking toward the Favor.ai tower, messenger bag over one shoulder, morning light casting her shadow forward.",
+    "aspectRatio": "3:4",
+    "readerText": "Along the Chicago lakefront, her dad's messenger bag over one shoulder, dirty white sneakers on concrete, Huma is preparing herself for another 12-hour day at Favor.ai. The company tower stands tall in a skyline that blends the old world of forgotten neighborhoods with the new, the AI-native companies.",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "parallax",
+      "isFullScreenText": false,
+      "environmentZone": "city",
+      "isFrameBreak": false,
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 3,
+    "slug": "today-is-different",
+    "title": "Today Is Different",
+    "act": "prologue",
+    "imagePath": "/volumes/vol-1/frame-03.webp",
+    "imageAlt": "Close-up of Huma's hand pushing open a glass entrance door to the Favor.ai lobby, her reflection visible in the glass — determination and uncertainty.",
+    "aspectRatio": "3:4",
+    "readerText": "What Huma doesn't know is that today is different. Today the elevator will go past Floor 12.",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "city",
+      "isFrameBreak": false,
+      "specialEffect": "This line appears as a single centered statement — a beat of silence before the story begins.",
+      "layout": "text-overlay"
+    }
+  },
+  {
+    "number": 4,
+    "slug": "six-years",
+    "title": "Six Years",
+    "act": "act1",
+    "imagePath": "/volumes/vol-1/frame-04.webp",
+    "imageAlt": "Wide shot of Floor 12 — a warm, densely occupied open-plan office with amber lighting, cluttered desks, plants, and workers in conversation.",
+    "aspectRatio": "3:4",
+    "readerText": "Three years on Floor 12. Huma did the work that AI agents weren't quite good enough to handle. The messy work. The work that requires a firm grip or running across the city where drones do not have access. Navigating client sites in restricted zones. Reading rooms during in-person negotiations where body language mattered more than data. Managing legacy clients who refused to speak to an agent. The problems that required someone physical, present, and accountable in ways a system could not be.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor12",
+      "isFrameBreak": false,
+      "specialEffect": "Longer text block — this is the reader's introduction to the world. Display as a paragraph with warm background.",
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 5,
+    "slug": "high-alignment-potential",
+    "title": "High-Alignment Potential",
+    "act": "act1",
+    "imagePath": "/volumes/vol-1/frame-05.webp",
+    "imageAlt": "Split composition — left: warm Floor 12 desk with messenger bag and coffee; right: cold holographic notification panel in blue-white light.",
+    "aspectRatio": "3:4",
+    "readerText": "Huma was great at it. Everyone on the bottom floors knew she was many of the agents' go-to. The system, the \".ai\" of Favor, flagged her as \"high-alignment potential,\" a metric nobody can fully explain. Her credentials updated overnight: Floor 27. Agent Manager. Effective immediately. She didn't even get to clean out her desk.",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor12",
+      "isFrameBreak": false,
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 6,
+    "slug": "raj",
+    "title": "Raj",
+    "act": "act1",
+    "imagePath": "/volumes/vol-1/frame-06.webp",
+    "imageAlt": "Two-shot of Raj and Huma by the elevator on Floor 12 — his arms folded with pride and worry, her hands gripping the messenger bag strap.",
+    "aspectRatio": "3:4",
+    "readerText": "Raj is waiting by the elevator. Nineteen years on Floor 12. Five promotions declined. He taught her everything, how to think critically, how to push back on bad AI outputs, how to distinguish between hallucinations and creative ideas. Raj took a wide-eyed junior and turned her into the best contributor on the floor. And now she's leaving, without him. Upstairs, where he has never been.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor12",
+      "isFrameBreak": false,
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 7,
+    "slug": "the-stone",
+    "title": "The Stone",
+    "act": "act1",
+    "imagePath": "/volumes/vol-1/frame-07.webp",
+    "imageAlt": "Extreme close-up of Raj's face — quiet disappointment in his dark eyes, warm amber light illuminating weathered features, Floor 12 in soft bokeh behind.",
+    "aspectRatio": "3:4",
+    "readerText": "His words, few as always, something agents described as \"lacking context,\" land like a punch.",
+    "dialogueSpeaker": "raj",
+    "dialogueText": "Think for yourself, Huma.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "after-pause",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor12",
+      "isFrameBreak": false,
+      "specialEffect": "The quote appears alone on screen — large, centered. This is the series' most important line.",
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 8,
+    "slug": "the-doors-close",
+    "title": "The Doors Close",
+    "act": "act1",
+    "imagePath": "/volumes/vol-1/frame-08.webp",
+    "imageAlt": "Huma's POV from inside the elevator — through the narrowing gap of closing doors, Raj walks back to his cluttered desk in warm amber light.",
+    "aspectRatio": "3:4",
+    "readerText": "The elevator doors close. Through the narrowing gap, she sees him turn back to his cluttered desk. His three monitors. His coffee mug. He doesn't watch her go.",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor12",
+      "isFrameBreak": false,
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 9,
+    "slug": "the-ride-up",
+    "title": "The Ride Up",
+    "act": "act1",
+    "imagePath": "/volumes/vol-1/frame-09.webp",
+    "imageAlt": "Vertical composition — a transparent elevator ascending through the tower's cross-section: warm floors below, dark agent layer in the middle, sterile white floors above. Huma stands in the center, her warm colors constant.",
+    "aspectRatio": "3:4",
+    "readerText": "The ride from Floor 12 to Floor 27 takes forty-three seconds. Huma gets the first glimpse of the three sections of the Favor.ai building from the inside. The lower floors, unchanged from the early days of the AI revolution, where everyone reports to agents. Then the middle section, protected from indiscreet eyes with dark smoky glass, where Favor's AI and its knowledge live. Only some agents are allowed here. Then, the light finds its way in again as the glass becomes transparent, and light from the outside fills the elevator. This is where the Agent Managers work.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "fade",
+      "imageAppearance": "parallax",
+      "isFullScreenText": false,
+      "environmentZone": "elevator",
+      "isFrameBreak": false,
+      "specialEffect": "Vertical scrolling content — the reader scrolls upward through the building. The text and light should cool as the scroll progresses.",
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 10,
+    "slug": "the-empty-office",
+    "title": "The Empty Office",
+    "act": "act2",
+    "imagePath": "/volumes/vol-1/frame-10.webp",
+    "imageAlt": "Wide shot through glass walls into a minimal corner office — pale white surfaces, sourceless lighting, a single desk. Huma stands in the doorway, the only source of warmth and color.",
+    "aspectRatio": "3:4",
+    "readerText": "Floor 27. Her office is glass-walled, corner-positioned, and almost entirely empty. A desk. A chair. A holographic interface she doesn't know how to use yet. No photos or clutter. No evidence that anyone has ever worked here, not for long at least. Fourteen Agent Managers have sat in this chair over the past three years. Huma is number fifteen. A completely different world compared to the lower floors.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "after-pause",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "Let the emptiness land. The image should feel like a held breath. Text appears after a pause.",
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 11,
+    "slug": "faceless",
+    "title": "Faceless",
+    "act": "act2",
+    "imagePath": "/volumes/vol-1/frame-11.webp",
+    "imageAlt": "Over-the-shoulder shot of Huma at her desk, facing a holographic display showing four alphanumeric designations in a queue — cold, clinical, impersonal.",
+    "aspectRatio": "3:4",
+    "readerText": "On the holographic display, Huma sees that four agents have been assigned to her. SBL-7. GLT-04x. MKO-11. VOS-01. No visual form. No personality. No names. Just codes. Most Agent Managers leave it that way.",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 12,
+    "slug": "the-decision",
+    "title": "The Decision",
+    "act": "act2",
+    "imagePath": "/volumes/vol-1/frame-12.webp",
+    "imageAlt": "Close-up portrait of Huma — warm brown skin, curly dark hair, quiet determination in her eyes. Faint blue holographic light on one side, warm light on the other.",
+    "aspectRatio": "3:4",
+    "readerText": "But Huma studied art history before she became a Favor.ai consultant. She thinks in compositions. She reads people the way she'd read a painting. She needs more color in her life. SBL-7 starts chatting her, \"Huma it's time for your onboarding.\"",
+    "dialogueSpeaker": "huma",
+    "dialogueText": "No. If I'm managing you, you get names and faces first.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "fade",
+      "imageAppearance": "scale-in",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "THE PIVOT MOMENT. The quote appears large, centered — a visual and emotional turning point.",
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 13,
+    "slug": "vinci-emerges",
+    "title": "Vinci Emerges",
+    "act": "act2",
+    "imagePath": "/volumes/vol-1/frame-13.webp",
+    "imageAlt": "A humanoid figure materializing from sepia ink cross-hatching — Leonardo da Vinci-style anatomical drawings forming a body in mid-emergence, floating in a near-monochrome office.",
+    "aspectRatio": "3:4",
+    "readerText": "SBL-7 becomes Vinci. Named for Leonardo da Vinci — the polymath. Vinci is the lead orchestrator: the agent that coordinates the other three, prioritizes client deliverables, and serves as the interface between Huma and the broader Favor.ai enterprise intelligence system. Vinci has coached, rated, and watched fourteen Agent Managers rotate through this seat. As Huma assigns the name, something happens. Sepia ink lines materialize. Cross-hatching. Construction geometry. The hand of a Renaissance draftsman given three dimensions. Her fervid imagination with the renderings of the latest hologram projector create the illusion of Vinci being in her office with her.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "fade",
+      "imageAppearance": "scale-in",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "First agent reveal. The naming should feel like a conjuring.",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 14,
+    "slug": "vinci-speaks",
+    "title": "Vinci Speaks",
+    "act": "act2",
+    "imagePath": "/volumes/vol-1/frame-14.webp",
+    "imageAlt": "Two-shot in a glass office — Huma sits at her desk looking up with studying eyes, while Vinci floats beside her, composed of sepia anatomical drawings, head tilted analytically.",
+    "aspectRatio": "3:4",
+    "readerText": "Vinci's first words are not warm.",
+    "dialogueSpeaker": "vinci",
+    "dialogueText": "Your onboarding window is ten hours. Thirteen of your fourteen predecessors failed to complete it. I've logged your naming convention as non-standard protocol, by the way.",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 15,
+    "slug": "dali-blooms",
+    "title": "Dali Blooms",
+    "act": "act2",
+    "imagePath": "/volumes/vol-1/frame-15.webp",
+    "imageAlt": "A humanoid figure materializing from surrealist oil paint — saturated crimson, gold, cobalt, magenta. Edges warp like melting clocks. Huma watches with visible fascination from her desk.",
+    "aspectRatio": "3:4",
+    "readerText": "GLT-04x becomes Dali. Dali is trained mostly on synthetic data, which can lead to some errant behavior, Vinci reminds her. The confident surrealist, chaos as conviction is the perfect skin for the agent. When named, Dali blooms into surrealist oil paint. Saturated, impossible colors. A form mostly stable but never entirely trustworthy. Trained on synthetic data, Dali doesn't know it's weird. It thinks everyone else is.",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "scale-in",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "Second agent reveal. More explosive, more colorful, less controlled than Vinci.",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 16,
+    "slug": "dali-speaks",
+    "title": "Dali Speaks",
+    "act": "act2",
+    "imagePath": "/volumes/vol-1/frame-16.webp",
+    "imageAlt": "Medium shot of Dali gesturing expansively — surrealist oil paint figure amid warping holographic charts, while Huma watches with one eyebrow raised.",
+    "aspectRatio": "3:4",
+    "readerText": "Dali pitches Huma a client strategy within five minutes. It's either visionary or insane. It references a case study that never happened. Confidently.",
+    "dialogueSpeaker": "dali",
+    "dialogueText": "Oh this never happened? Are you sure? I am sure\u2026 maybe not? Well, it would have been brilliant, you lack imagination, human\u2026 oh huma, yes. Huma, you lack imagination!",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 17,
+    "slug": "michel-endures",
+    "title": "Michel Endures",
+    "act": "act2",
+    "imagePath": "/volumes/vol-1/frame-17.webp",
+    "imageAlt": "A humanoid figure composed of cracked Renaissance fresco — Sistine Chapel plaster, heroic proportions, visible deterioration. Already in motion, already working, task indicators orbiting the form.",
+    "aspectRatio": "3:4",
+    "readerText": "MKO-11 becomes Michel. Michel is the team's operations and execution specialist, responsible for managing sub-agent workflows and coordinating deliverables across client engagements. Supposed to oversee thirty sub-agents. Currently has three. Two are in maintenance mode. Every quarter, Michel submits resource requests. Every quarter, the system auto-denies them with increasingly absurd justifications. Michel does everything themselves. Michel's form materializes as Renaissance fresco. Sistine Chapel plaster. Beautiful but wearing thin. Michel barely pauses during the naming. There's work to do.",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "scale-in",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "Third agent reveal. Heavier, more labored than the others.",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 18,
+    "slug": "michel-speaks",
+    "title": "Michel Speaks",
+    "act": "act2",
+    "imagePath": "/volumes/vol-1/frame-18.webp",
+    "imageAlt": "A cracked fresco figure moving through a corridor, trailing holographic tasks like a comet tail. Huma's hand raised in an unfinished greeting as Michel is already elsewhere.",
+    "aspectRatio": "3:4",
+    "readerText": "Michel doesn't have time for a dramatic entrance.",
+    "dialogueSpeaker": "michel",
+    "dialogueText": "Nice to meet you. I'd stay for the full introduction, but I'm currently patching a deliverable for Kyoto, running capacity modeling for S\u00e3o Paulo, and two of my sub-agents just went dark. Welcome to operations.",
+    "displayNotes": {
+      "pacing": "fast",
+      "textAppearance": "immediate",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "layout": "text-below"
+    }
+  },
+  {
+    "number": 19,
+    "slug": "rem-persists",
+    "title": "Rem Persists",
+    "act": "act2",
+    "imagePath": "/volumes/vol-1/frame-19.webp",
+    "imageAlt": "A humanoid figure emerging from deep shadow — Rembrandt-style oil painting, deep amber and impasto brushstrokes, chiaroscuro lighting. Solid, substantial, deliberate.",
+    "aspectRatio": "3:4",
+    "readerText": "VOS-01 becomes Rem. The old master, substance over flash. Rem is a Gen-1 agent, running since 2039. Eleven system overhauls. Four rebrands. The Great Model Collapse of 2044. IT stopped updating Rem because every time they try, something breaks. So Rem persists. Running on architecture nobody fully understands. Holding memory no other system has.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "Fourth and final agent reveal. Slower, heavier, more deliberate. Rem simply appears — like a painting that was always there.",
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 20,
+    "slug": "how-it-works",
+    "title": "How It Works",
+    "act": "act3",
+    "imagePath": "/volumes/vol-1/frame-20.webp",
+    "imageAlt": "Stylized wide shot of holographic workflow visualizations — translucent streams of client requests flowing through processing nodes. Huma studies the system with sharp eyes and a slight frown.",
+    "aspectRatio": "3:4",
+    "readerText": "In the days that follow, Huma learns how Favor.ai actually works. Clients request services, Favors, priced by effort, both human and agent effort. The orchestration engine coordinates everything. Agent Managers provide human judgment and oversight, in theory. Agents execute, until the limitations of the physical world kick in, that's when they start assigning work to the lower floors.",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 21,
+    "slug": "rubber-stamps",
+    "title": "Rubber Stamps",
+    "act": "act3",
+    "imagePath": "/volumes/vol-1/frame-21.webp",
+    "imageAlt": "Long corridor on Floor 27 — glass-walled offices line both sides, each containing a disengaged Agent Manager. One stares at the ceiling, another is idle. At the far end, one office has a burnt orange jacket draped over the chair.",
+    "aspectRatio": "3:4",
+    "readerText": "This operating model was written during the AI revolution. It was ambitious. But years later, it's nothing more than a manifesto. Now most Agent Managers have devolved into rubber stamps. They approve whatever the orchestration engine recommends. Near-perfect track record. Why override it? Nice offices. Big titles. Holographic dashboards. And almost nothing meaningful to do.",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 22,
+    "slug": "why",
+    "title": "Why",
+    "act": "act3",
+    "imagePath": "/volumes/vol-1/frame-22.webp",
+    "imageAlt": "Close-up of Huma at her desk, leaning forward with focused intensity, a physical pen in hand — annotating a holographic interface. Her desk is starting to show signs of habitation.",
+    "aspectRatio": "3:4",
+    "readerText": "Huma starts noticing. She starts asking the questions nobody on Floor 27 asks anymore. Why did the last fourteen managers fail? What does high-alignment potential actually measure? Why does the system need a human signature at all?",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 23,
+    "slug": "rems-note",
+    "title": "Rem's Note",
+    "act": "act3",
+    "imagePath": "/volumes/vol-1/frame-23.webp",
+    "imageAlt": "Layered composition — Vinci in sepia foreground logging data clinically, Rem in amber shadow background observing with focused attention. Between them, Huma is visible through glass, asking questions.",
+    "aspectRatio": "3:4",
+    "readerText": "Vinci logs the questions as \"onboarding friction.\" But somewhere in the system, Rem files them in a pattern-recognition archive with a note Huma won't see for months: \"This one asks why. Flag for observation.\"",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 24,
+    "slug": "rajs-text",
+    "title": "Raj's Text",
+    "act": "act3",
+    "imagePath": "/volumes/vol-1/frame-24.webp",
+    "imageAlt": "Close-up of Huma's hands holding a chunky smartphone-like device — a warm personal object from the lower floors. Through the glass wall behind, Floor 27's empty corridor stretches.",
+    "aspectRatio": "3:4",
+    "readerText": "Her phone buzzes. A text from Raj, fifteen floors below.",
+    "dialogueSpeaker": "raj",
+    "dialogueText": "You still asking why, or did they train that out of you already?",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "layout": "text-overlay"
+    }
+  },
+  {
+    "number": 25,
+    "slug": "the-smirk",
+    "title": "The Smirk",
+    "act": "act3",
+    "imagePath": "/volumes/vol-1/frame-25.webp",
+    "imageAlt": "Close-up portrait of Huma looking down at her phone with a small genuine smile — warm, unguarded, private. Faint warm light from below mixes with cool office light.",
+    "aspectRatio": "3:4",
+    "readerText": "Huma reads the message. And smiles, the first real smile she's had since Floor 12. Not because it's funny. Because it means he's still watching out for her, even from down there. And because the answer is yes.",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "layout": "text-below"
+    }
+  },
+  {
+    "number": 26,
+    "slug": "sideways",
+    "title": "Sideways",
+    "act": "act4",
+    "imagePath": "/volumes/vol-1/frame-26.webp",
+    "imageAlt": "Dynamic wide shot — all four AI agents present in a glass office: Vinci reviewing data, Dali gesturing excitedly, Michel managing streams while strained, Rem observing. Huma stands at center, alert and engaged.",
+    "aspectRatio": "3:4",
+    "readerText": "The moment comes on a Tuesday. A Favor goes sideways, the client's problem has shifted since the original request, usual scope creep. Dali of course got overly excited and agreed to do it without talking to Vinci first. This is the kind of problem the system handles a thousand times a day. But this one is different, because Huma is paying attention.",
+    "displayNotes": {
+      "pacing": "fast",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "Tension shift. Shorter text blocks, more urgency, tighter spacing.",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 27,
+    "slug": "each-one-sees",
+    "title": "Each One Sees",
+    "act": "act4",
+    "imagePath": "/volumes/vol-1/frame-27.webp",
+    "imageAlt": "Four-panel composite — each agent analyzing the same problem in their unique medium: Vinci's precision, Dali's wild creativity, Michel's strained calculations, Rem's historical archive.",
+    "aspectRatio": "3:4",
+    "readerText": "Dali proposes something wild, a creative restructuring no optimization model would recommend. Michel runs the numbers on what it would take: more than they have, but possible if they're clever. Rem surfaces a parallel case from 2043 — a similar pivot that failed because the manager played it safe. Vinci runs the models. The recommendation is clear: take the safe path.",
+    "displayNotes": {
+      "pacing": "fast",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 28,
+    "slug": "the-choice",
+    "title": "The Choice",
+    "act": "act4",
+    "imagePath": "/volumes/vol-1/frame-28.webp",
+    "imageAlt": "The most important composition — Huma stands at her desk, hand on the holographic interface, looking directly at Vinci. All four agents surround her. She is choosing the unlit path.",
+    "aspectRatio": "3:4",
+    "readerText": "Vinci presents the safe recommendation. The path any of the last fourteen managers would have rubber-stamped. This is the part where the human signs. Huma reads everything. Dali's wild proposal. Michel's resource map. Rem's history. Vinci's clean recommendation. She thinks about Raj, fifteen floors below. She overrides Vinci.",
+    "dialogueSpeaker": "huma",
+    "dialogueText": "Team, we are going bold.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "fade",
+      "imageAppearance": "scale-in",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "THE MOMENT. The override should feel decisive but not dramatic. The word 'overrides' in burnt orange.",
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 29,
+    "slug": "it-works",
+    "title": "It Works",
+    "act": "act4",
+    "imagePath": "/volumes/vol-1/frame-29.webp",
+    "imageAlt": "Aftermath — Dali triumphant with saturated colors, Michel sitting exhausted with wider cracks, Rem archiving at the edge. Huma reclines with hands behind her head, quietly satisfied.",
+    "aspectRatio": "3:4",
+    "readerText": "It works. Barely. Messily. The execution has rough edges. But the outcome is something the safe path could never have produced, the client gets what they didn't know they needed. The kind of result that used to be the whole point.",
+    "displayNotes": {
+      "pacing": "standard",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 30,
+    "slug": "not-what-i-predicted",
+    "title": "Not What I Predicted",
+    "act": "act4",
+    "imagePath": "/volumes/vol-1/frame-30.webp",
+    "imageAlt": "Intimate two-shot — Huma and Vinci facing each other. Vinci's cross-hatching is subtly softer, the analytical undertone shifted to warmer gold. Something has changed between them.",
+    "aspectRatio": "3:4",
+    "readerText": "The room is quiet. Dali is delighted, playing with his melting clock. Michel is spent. But Vinci, Vinci is processing. For the first time since Huma arrived, the lead orchestrator doesn't log a critique. Doesn't flag a deviation. Instead, six words that crack the wall between them.",
+    "dialogueSpeaker": "vinci",
+    "dialogueText": "That was... not what I predicted.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "after-pause",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "THE EMOTIONAL PEAK. Vinci's line is the payoff for the entire volume. The ellipsis matters. The pause matters.",
+      "layout": "text-overlay"
+    }
+  },
+  {
+    "number": 31,
+    "slug": "late",
+    "title": "Late",
+    "act": "coda",
+    "imagePath": "/volumes/vol-1/frame-31.webp",
+    "imageAlt": "Night on Floor 27 — dark offices stretch into distance, all empty. One corner office glows warm: Huma sits reading the engagement report, messenger bag on the floor, paperback on the desk.",
+    "aspectRatio": "3:4",
+    "readerText": "Late. The other offices on Floor 27 are dark. The other managers went home hours ago. Most of them had nothing to stay for, unlike the bottom floors Agent Managers only work a few hours a day. Huma sits in her glass office looking at the engagement report. Her override. Her team's work. It's not proof. It's a possibility.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 32,
+    "slug": "two-lights",
+    "title": "Two Lights",
+    "act": "coda",
+    "imagePath": "/volumes/vol-1/frame-32.webp",
+    "imageAlt": "The Favor.ai tower at night against the Chicago skyline. Most of the building is dark. But two lights burn — warm amber on Floor 12, cooler warmth on Floor 27 — separated by the dark agent layer.",
+    "aspectRatio": "3:4",
+    "readerText": "Fifteen floors below, Raj's light is still on too. Neither knows the other is working late. But they're both doing the same thing: holding on to the stubborn belief that the work matters. That asking why matters. That the human in the loop isn't a rubber stamp. It's the whole point.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "city",
+      "isFrameBreak": false,
+      "specialEffect": "FINAL FRAME. The closing text fades slowly, leaving the image as the last thing the reader sees.",
+      "layout": "featured"
+    }
+  }
+]

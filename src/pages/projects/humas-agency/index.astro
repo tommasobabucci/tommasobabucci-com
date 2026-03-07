@@ -1,0 +1,121 @@
+---
+import ComicLayout from '../../../layouts/ComicLayout.astro';
+import FadeIn from '../../../components/FadeIn.astro';
+
+const entries = [
+  {
+    title: "The Making of Huma's Agency",
+    description: 'The story behind the story — how this project came together.',
+    type: 'Article',
+    image: null,
+    href: '#',
+    comingSoon: true,
+  },
+  {
+    title: 'Volume 1: The Promotion',
+    description: 'Huma moves from Floor 12 to Floor 27. Everything changes.',
+    type: 'Volume',
+    image: '/images/projects/humas-agency/vol-1-cover.png',
+    href: '/projects/humas-agency/vol-1/',
+    comingSoon: false,
+  },
+  {
+    title: 'Volume 2',
+    description: 'The story continues.',
+    type: 'Volume',
+    image: null,
+    href: '#',
+    comingSoon: true,
+  },
+  {
+    title: 'Volume 3',
+    description: 'The story continues.',
+    type: 'Volume',
+    image: null,
+    href: '#',
+    comingSoon: true,
+  },
+];
+---
+
+<ComicLayout
+  title="Huma's Agency"
+  description="A visual story set in 2050 about AI, human agency, and the question that matters most: who's really in the loop?"
+  backHref="/#fun-section"
+  backLabel="Back"
+>
+  <!-- Hero -->
+  <section class="hub-hero">
+    <div class="hub-hero-bg">
+      <img
+        src="/images/projects/humas-agency/highlight.png"
+        alt="Huma's Agency — a figure stands before a vast ocean under a coral sky"
+        class="hub-hero-img"
+      />
+      <div class="hub-hero-overlay"></div>
+    </div>
+    <div class="hub-hero-content">
+      <FadeIn>
+        <span class="hub-hero-label">Digital Comic Series</span>
+        <h1 class="hub-hero-title">Huma's Agency</h1>
+      </FadeIn>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="hub-description">
+    <FadeIn>
+      <div class="hub-description-inner">
+        <p>Everyone talks about Agentic Enterprises. But what does one actually look like? What do you feel when you walk into the lobby? What's it like to work there, not in a slide deck, but on a Tuesday afternoon when the AI agents are arguing and your coffee is cold?</p>
+        <p>Huma's Agency is a digital graphic novel set in 2050 Chicago that explores these questions through story. It follows one woman's first day as an agent manager at Favor.ai, where the technology works and the humans are still catching up. It's not a prediction. It's imagination taken a bit too far, and it doesn't take itself too seriously.</p>
+        <p>Every panel was built with Claude Code, because the other question I wanted to answer matters just as much: how do you keep human creativity in the driver's seat when AI makes the art? I'm not a drawer. But I had a vision, built a custom pipeline for comic book generation, and proved that the idea is the craft.</p>
+      </div>
+    </FadeIn>
+  </section>
+
+  <!-- Entry cards -->
+  <section class="hub-grid-section">
+    <div class="hub-grid">
+      {entries.map((entry, i) => (
+        <FadeIn delay={i * 0.1}>
+          {entry.comingSoon ? (
+            <div class="hub-card hub-card--locked">
+              <div class="hub-card-image hub-card-image--placeholder">
+                <span class="hub-card-badge">Coming Soon</span>
+              </div>
+              <div class="hub-card-body">
+                <span class="hub-card-type">{entry.type}</span>
+                <h3 class="hub-card-title">{entry.title}</h3>
+                <p class="hub-card-desc">{entry.description}</p>
+              </div>
+            </div>
+          ) : (
+            <a href={entry.href} class="hub-card hub-card--active">
+              <div class="hub-card-image">
+                {entry.image && (
+                  <img src={entry.image} alt={entry.title} loading="lazy" />
+                )}
+              </div>
+              <div class="hub-card-body">
+                <span class="hub-card-type">{entry.type}</span>
+                <h3 class="hub-card-title">{entry.title}</h3>
+                <p class="hub-card-desc">{entry.description}</p>
+                <span class="hub-card-cta">Read &rarr;</span>
+              </div>
+            </a>
+          )}
+        </FadeIn>
+      ))}
+    </div>
+  </section>
+
+  <!-- Back to homepage -->
+  <div class="hub-back">
+    <a href="/#fun-section" class="section-crossnav section-crossnav--to-fun">
+      <span style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 500;">
+        Working for Fun
+      </span>
+      <span style="font-size: 16px;">&larr;</span>
+    </a>
+  </div>
+</ComicLayout>

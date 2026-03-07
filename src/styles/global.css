@@ -1102,3 +1102,759 @@
     margin: 32px 0;
   }
 }
+
+/* ============================================================
+   COMIC LAYOUT — Dark immersive reading experience
+   ============================================================ */
+
+.comic-layout {
+  background: #0F110F;
+  color: #E8E6E1;
+  min-height: 100vh;
+}
+
+.comic-main {
+  position: relative;
+}
+
+/* ---- Sticky nav bar ---- */
+.comic-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: rgba(15, 17, 15, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.comic-nav-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #9B9892;
+  font-family: "Sora", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.comic-nav-back:hover {
+  color: #E8E6E1;
+}
+
+.comic-nav-arrow {
+  font-size: 16px;
+}
+
+.comic-nav-volume {
+  font-family: "Sora", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5C5A56;
+}
+
+/* ============================================================
+   COMIC COVER — Full viewport hero opening
+   ============================================================ */
+.comic-cover {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.comic-cover-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.comic-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comic-cover-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(15,17,15,0.5) 0%, rgba(15,17,15,0.4) 30%, rgba(15,17,15,0.7) 60%, rgba(15,17,15,0.95) 100%),
+    radial-gradient(ellipse at center, rgba(15,17,15,0.3) 0%, rgba(15,17,15,0.5) 100%);
+}
+
+.comic-cover-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 24px;
+  opacity: 0;
+  animation: heroReveal 1s cubic-bezier(0.16,1,0.3,1) 0.3s forwards;
+}
+
+.comic-cover-label {
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #FF2D6F;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.comic-cover-title {
+  font-family: "Krona One", sans-serif;
+  font-size: clamp(36px, 7vw, 64px);
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.7), 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.comic-cover-series {
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #E8E6E1;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.comic-cover-scroll {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-family: "Sora", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #9B9892;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: heroReveal 0.6s cubic-bezier(0.16,1,0.3,1) 1.2s forwards;
+}
+
+.comic-cover-arrow {
+  font-size: 18px;
+  animation: comicBounce 2s ease-in-out infinite;
+}
+
+@keyframes comicBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* ============================================================
+   ACT DIVIDERS
+   ============================================================ */
+.comic-act-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 80px 24px;
+}
+
+.comic-act-dots {
+  font-size: 18px;
+  color: #3A3A38;
+  letter-spacing: 0.3em;
+}
+
+.comic-act-label {
+  font-family: "Sora", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #5C5A56;
+}
+
+/* ============================================================
+   COMIC FRAMES — Scene containers
+   ============================================================ */
+.comic-frame {
+  padding: 60px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.comic-frame-inner {
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Panel image base styles */
+.comic-panel-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Narrative text base styles */
+.comic-prose {
+  font-family: "Sora", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.72;
+  color: #D4D2CD;
+}
+
+.comic-prose strong {
+  color: #E8E6E1;
+  font-weight: 500;
+}
+
+/* ---- FEATURED layout ---- */
+.comic-frame--featured .comic-frame-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 680px;
+}
+
+.comic-frame--featured .comic-frame-image {
+  max-width: 600px;
+  width: 100%;
+}
+
+.comic-frame--featured .comic-frame-text {
+  text-align: center;
+  max-width: 640px;
+}
+
+.comic-frame--featured .comic-prose {
+  font-size: 16px;
+}
+
+/* ---- TEXT-LEFT layout (text on left, image on right) ---- */
+.comic-frame--text-left .comic-frame-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.comic-frame--text-left .comic-frame-text {
+  order: 1;
+}
+
+.comic-frame--text-left .comic-frame-image {
+  order: 2;
+}
+
+/* ---- TEXT-RIGHT layout (image on left, text on right) ---- */
+.comic-frame--text-right .comic-frame-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.comic-frame--text-right .comic-frame-image {
+  order: 1;
+}
+
+.comic-frame--text-right .comic-frame-text {
+  order: 2;
+}
+
+/* ---- TEXT-OVERLAY layout ---- */
+.comic-frame--text-overlay .comic-frame-inner {
+  position: relative;
+  max-width: 800px;
+}
+
+.comic-frame--text-overlay .comic-frame-image {
+  position: relative;
+}
+
+.comic-frame--text-overlay .comic-frame-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 80px 32px 32px;
+  background: linear-gradient(transparent, rgba(15, 17, 15, 0.85) 40%, rgba(15, 17, 15, 0.95));
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+}
+
+.comic-frame--text-overlay .comic-prose {
+  font-size: 16px;
+  color: #E8E6E1;
+}
+
+/* ---- TEXT-BELOW layout ---- */
+.comic-frame--text-below .comic-frame-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 680px;
+}
+
+.comic-frame--text-below .comic-frame-image {
+  max-width: 600px;
+  width: 100%;
+}
+
+.comic-frame--text-below .comic-frame-text {
+  max-width: 640px;
+}
+
+/* ============================================================
+   DIALOGUE BLOCKS
+   ============================================================ */
+.comic-dialogue {
+  margin-top: 28px;
+  padding-left: 20px;
+  border-left: 3px solid var(--dialogue-color, #9B9892);
+}
+
+.comic-dialogue-speaker {
+  font-family: "Sora", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dialogue-color, #9B9892);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.comic-dialogue-text {
+  font-family: "Sora", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #E8E6E1;
+  margin: 0;
+}
+
+/* Centered dialogue for featured layout */
+.comic-frame--featured .comic-dialogue {
+  border-left: none;
+  padding-left: 0;
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+}
+
+.comic-frame--featured .comic-dialogue::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: var(--dialogue-color, #9B9892);
+  border-radius: 1px;
+}
+
+/* ============================================================
+   COMIC ENDING
+   ============================================================ */
+.comic-ending {
+  padding: 120px 24px;
+}
+
+.comic-ending-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.comic-ending-dots {
+  font-size: 18px;
+  color: #3A3A38;
+  letter-spacing: 0.3em;
+}
+
+.comic-ending-title {
+  font-family: "Krona One", sans-serif;
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 400;
+  color: #E8E6E1;
+  letter-spacing: -0.02em;
+}
+
+.comic-ending-line {
+  width: 40px;
+  height: 2px;
+  background: #FF2D6F;
+  border-radius: 1px;
+}
+
+.comic-ending-nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.comic-ending-link {
+  font-family: "Sora", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #FF2D6F;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.comic-ending-link:hover {
+  color: #E8E6E1;
+}
+
+.comic-ending-next {
+  font-family: "Sora", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #5C5A56;
+}
+
+/* ============================================================
+   PROJECT HUB — Huma's Agency landing
+   ============================================================ */
+.hub-hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hub-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.hub-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.hub-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(15,17,15,0.45) 0%, rgba(15,17,15,0.6) 40%, rgba(15,17,15,0.98) 100%),
+    radial-gradient(ellipse at center, rgba(15,17,15,0.2) 0%, rgba(15,17,15,0.4) 100%);
+}
+
+.hub-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 24px 48px;
+  max-width: 640px;
+}
+
+.hub-hero-label {
+  font-family: "Sora", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #FF2D6F;
+  display: block;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.hub-hero-title {
+  font-family: "Krona One", sans-serif;
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.7), 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hub-hero-desc {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: #9B9892;
+  line-height: 1.6;
+}
+
+/* ---- Hub description ---- */
+.hub-description {
+  padding: 56px 24px 48px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.hub-description-inner p {
+  font-family: "Sora", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.72;
+  color: #D4D2CD;
+  margin-bottom: 24px;
+}
+
+.hub-description-inner p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- Hub card grid ---- */
+.hub-grid-section {
+  padding: 40px 24px 80px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.hub-card {
+  background: #181A18;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hub-card--active:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 45, 111, 0.35);
+  box-shadow: 0 12px 40px rgba(255, 45, 111, 0.12), 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.hub-card--locked {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.hub-card-image {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+}
+
+.hub-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.hub-card--active:hover .hub-card-image img {
+  transform: scale(1.04);
+}
+
+.hub-card-image--placeholder {
+  background: #1A1C1A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hub-card-badge {
+  font-family: "Sora", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5C5A56;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+.hub-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.hub-card-type {
+  font-family: "Sora", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FF2D6F;
+  margin-bottom: 10px;
+}
+
+.hub-card--locked .hub-card-type {
+  color: #5C5A56;
+}
+
+.hub-card-title {
+  font-family: "Krona One", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #E8E6E1;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.hub-card--locked .hub-card-title {
+  color: #9B9892;
+}
+
+.hub-card-desc {
+  font-family: "Sora", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #5C5A56;
+  line-height: 1.5;
+}
+
+.hub-card-cta {
+  font-family: "Sora", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #FF2D6F;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.hub-back {
+  padding: 0 24px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ============================================================
+   COMIC RESPONSIVE — Mobile overrides
+   ============================================================ */
+@media (max-width: 767px) {
+  .comic-nav {
+    padding: 12px 16px;
+  }
+
+  .comic-frame {
+    padding: 40px 16px;
+  }
+
+  /* All grid layouts collapse to vertical stack on mobile */
+  .comic-frame--text-left .comic-frame-inner,
+  .comic-frame--text-right .comic-frame-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .comic-frame--text-left .comic-frame-text,
+  .comic-frame--text-left .comic-frame-image,
+  .comic-frame--text-right .comic-frame-text,
+  .comic-frame--text-right .comic-frame-image {
+    order: unset;
+  }
+
+  .comic-frame--featured .comic-prose {
+    font-size: 15px;
+  }
+
+  .comic-prose {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .comic-dialogue-text {
+    font-size: 14px;
+  }
+
+  /* Text overlay becomes text below on mobile */
+  .comic-frame--text-overlay .comic-frame-inner {
+    position: static;
+  }
+
+  .comic-frame--text-overlay .comic-frame-text {
+    position: static;
+    padding: 20px 0 0;
+    background: none;
+    text-align: left;
+  }
+
+  .comic-frame--text-overlay .comic-prose {
+    color: #D4D2CD;
+  }
+
+  .comic-act-divider {
+    padding: 48px 16px;
+  }
+
+  .comic-cover-title {
+    font-size: clamp(26px, 7vw, 40px);
+  }
+
+  .comic-ending {
+    padding: 80px 16px;
+  }
+
+  .comic-ending-nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Hub responsive */
+  .hub-hero {
+    min-height: 50vh;
+  }
+
+  .hub-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .hub-card-title {
+    font-size: 14px;
+  }
+
+  .hub-hero-desc {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .comic-frame--text-left .comic-frame-inner,
+  .comic-frame--text-right .comic-frame-inner {
+    gap: 32px;
+  }
+
+  .comic-frame--featured .comic-frame-inner {
+    max-width: 600px;
+  }
+}

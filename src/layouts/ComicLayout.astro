@@ -1,0 +1,40 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  volumeLabel?: string;
+  backHref?: string;
+  backLabel?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description,
+  volumeLabel,
+  backHref = '/projects/humas-agency/',
+  backLabel = 'Huma\'s Agency',
+  ogImage,
+} = Astro.props;
+---
+
+<BaseLayout title={title} description={description} ogImage={ogImage}>
+  <div class="comic-layout">
+    <!-- Sticky minimal header -->
+    <nav class="comic-nav">
+      <a href={backHref} class="comic-nav-back">
+        <span class="comic-nav-arrow">&larr;</span>
+        <span class="comic-nav-label">{backLabel}</span>
+      </a>
+      {volumeLabel && (
+        <span class="comic-nav-volume">{volumeLabel}</span>
+      )}
+    </nav>
+
+    <main class="comic-main">
+      <slot />
+    </main>
+  </div>
+</BaseLayout>
