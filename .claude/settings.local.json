@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(source ~/.nvm/nvm.sh)",
+      "Bash(nvm use 24)",
+      "Bash(npm create astro@latest . --template minimal --typescript strict --git false --install --yes)",
+      "Bash(npx create-astro@latest . --template minimal --typescript strict --no-git --install --yes)",
+      "Bash(npx astro add react tailwind sitemap --yes)",
+      "Bash(npx astro check)",
+      "Bash(npm install --save-dev @astrojs/check typescript)",
+      "Bash(npm run build)"
+    ]
+  }
+}

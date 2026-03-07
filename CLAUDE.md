@@ -48,7 +48,7 @@ Keep it simple — all assets live in the repo:
 |---|---|---|
 | Headshot, favicon, OG image | `public/images/` | Small, static |
 | Article images | `public/images/articles/` | Optimized via Astro `<Image />` |
-| Comic panels | `public/images/comics/` | WebP format, max ~1200px wide |
+| Project images | `public/images/projects/humas-agency/` | PNG format, cover + 32 frames for Vol 1 |
 | Videos | YouTube/Vimeo embeds | No self-hosting needed |
 
 **Image optimization:** Use Astro's built-in `<Image />` component — it auto-converts to WebP, generates responsive sizes, and lazy-loads. No external tooling needed.
@@ -67,12 +67,21 @@ If the media folder ever grows beyond what's comfortable in git (~500MB+), migra
 │   └── images/
 │       ├── headshot.jpg
 │       ├── articles/             # Article cover images (01.png – 04.png)
-│       └── comics/               # Comic panels (empty — not yet built)
+│       └── projects/
+│           └── humas-agency/
+│               ├── highlight.png       # Hub hero background (5.2 MB)
+│               ├── vol-1-cover.png     # Volume 1 cover image
+│               └── vol-1/             # 32 comic frames (frame-01.png – frame-32.png)
 │
 ├── src/
 │   ├── components/
 │   │   ├── SectionTag.astro      # Reusable section label (01 — About)
 │   │   ├── FadeIn.astro          # Scroll-triggered fade with direction prop
+│   │   │
+│   │   ├── comic/
+│   │   │   ├── ComicFrame.astro     # Single comic frame (image + prose + dialogue)
+│   │   │   ├── DialogueBlock.astro  # Speaker name + dialogue text block
+│   │   │   └── ActDivider.astro     # Act/section divider (unused — acts removed)
 │   │   │
 │   │   ├── work/
 │   │   │   ├── About.astro
@@ -86,17 +95,27 @@ If the media folder ever grows beyond what's comfortable in git (~500MB+), migra
 │   ├── content/
 │   │   ├── config.ts             # Content collection schemas
 │   │   ├── articles/             # 4 markdown articles with frontmatter
-│   │   ├── projects/             # Empty — not yet populated
-│   │   └── comics/               # Empty — not yet built
+│   │   ├── projects/
+│   │   │   └── humas-agency.md   # Huma's Agency project entry
+│   │   └── comics/               # Empty — not yet used
+│   │
+│   ├── data/
+│   │   └── humas-agency/
+│   │       └── vol1-script.json  # 32-frame narrative script (text, dialogue, layout hints)
 │   │
 │   ├── layouts/
 │   │   ├── BaseLayout.astro      # HTML shell, meta tags, fonts, JSON-LD
-│   │   └── ArticleLayout.astro   # Individual article page layout
+│   │   ├── ArticleLayout.astro   # Individual article page layout
+│   │   └── ComicLayout.astro     # Dark theme layout for comic/project pages
 │   │
 │   ├── pages/
 │   │   ├── index.astro           # Landing (unified hero + Fun section + Work section)
-│   │   └── articles/
-│   │       └── [...slug].astro   # Dynamic article pages
+│   │   ├── articles/
+│   │   │   └── [...slug].astro   # Dynamic article pages
+│   │   └── projects/
+│   │       └── humas-agency/
+│   │           ├── index.astro   # Project hub (hero + description + volume cards)
+│   │           └── vol-1.astro   # Volume 1 reader (cover + 32 frames + ending)
 │   │
 │   └── styles/
 │       └── global.css            # Tailwind 4 @theme, type utilities, animations, all component styles
@@ -106,8 +125,6 @@ If the media folder ever grows beyond what's comfortable in git (~500MB+), migra
 ├── package.json
 └── CLAUDE.md                     # This file
 ```
-
-> **Not yet built:** Comic system (ComicReader island, episode pages, ComicLayout), project pages, OG image.
 
 ---
 
@@ -140,6 +157,7 @@ const projects = defineCollection({
     title: z.string(),
     type: z.string(),
     description: z.string(),
+    date: z.coerce.date().optional(),       // Optional — used for sorting in ContentGrid
     tags: z.array(z.string()),
     featured: z.boolean().default(false),
     published: z.boolean().default(true),
@@ -355,12 +373,21 @@ Both use `client:visible` (hydrate on scroll).
 
 Everything else is static Astro components — zero JS shipped to the browser.
 
-### Neon Nostalgia Comic Reader (Not Yet Built)
+### Huma's Agency — Comic/Project System
 
-Planned: The comic will live at `/comics/` using the Fun palette (dark theme). Will need:
-- `ComicReader.tsx` — React island with panel-by-panel reading
-- `ComicLayout.astro` — Dark theme layout for episode pages
-- Episode list + reader pages
+The first project is **Huma's Agency**, a digital comic series at `/projects/humas-agency/`. It uses the Fun palette (dark theme) and is built entirely with static Astro components — no React islands needed.
+
+**Architecture:**
+- `ComicLayout.astro` — Dark theme layout wrapping all comic/project pages (extends BaseLayout)
+- `ComicFrame.astro` — Renders a single frame: image + narrative prose + optional dialogue. Supports 5 layout variants: `featured`, `text-left`, `text-right`, `text-overlay`, `text-below`
+- `DialogueBlock.astro` — Speaker name + dialogue text block
+- `vol1-script.json` — 32-frame narrative script in `src/data/humas-agency/`. Contains frame metadata, reader text, dialogue, layout hints, and display notes
+
+**Pages:**
+- `/projects/humas-agency/` — Project hub with hero image, 3-paragraph description, and volume entry cards
+- `/projects/humas-agency/vol-1/` — Volume 1 reader: full-viewport cover → 32 scrollable frames → ending nav
+
+**Fonts in comic pages:** Sora for all text (prose, dialogue, UI). Krona One for display titles only. No Newsreader — the comic uses the Fun section's modern sans-serif style throughout.
 
 ---
 
@@ -434,6 +461,13 @@ Individual article pages use the **Work palette** (warm/light) with:
 - Cover image (full-width)
 - Rendered markdown body (Newsreader serif, `.article-prose` styles)
 - Back link to main page (#fun-section)
+
+### Project Pages (`projects/humas-agency/`)
+
+Project pages use the **Fun palette** (dark) via `ComicLayout.astro`:
+
+- **Hub page** (`index.astro`): Full-viewport hero image with overlay → 3-paragraph description section (Sora 15px) → volume entry card grid (active + coming soon states) → back nav
+- **Volume reader** (`vol-1.astro`): Full-viewport cover with title overlay → 32 scrollable `ComicFrame` components loaded from `vol1-script.json` → ending section with nav links
 
 ---
 
@@ -512,9 +546,9 @@ Progress tracked here — completed steps marked with checkmarks:
 7. [x] **Content collections** — Schemas + 4 articles migrated with frontmatter
 8. [x] **Article pages** — Dynamic routes with ArticleLayout
 9. [x] **Polish** — Hero animations, directional scroll reveals, micro-interactions, section gradient
-10. [ ] **Comic system** — ComicReader island, episode pages (needs comic panel assets)
+10. [x] **Comic system** — Huma's Agency: ComicLayout, ComicFrame, 32-frame Vol 1, project hub
 11. [ ] **OG image** — Create 1200x630px social sharing image
-12. [ ] **Deploy** — Initialize git, push to GitHub, connect Cloudflare Pages
+12. [x] **Deploy** — GitHub repo → Cloudflare Pages, auto-deploy on push
 
 ---
 
@@ -542,5 +576,5 @@ Progress tracked here — completed steps marked with checkmarks:
 - [x] Articles converted to markdown with frontmatter (4 articles in `src/content/articles/`)
 - [x] Article cover images (`public/images/articles/01.png` – `04.png`)
 - [x] Favicon (`public/favicon.svg` + `public/favicon.ico`)
+- [x] Huma's Agency comic frames (32 panels in `public/images/projects/humas-agency/vol-1/`, cover + hero images)
 - [ ] OG image (1200x630px) for social sharing — needed at `public/og-image.png`
-- [ ] Neon Nostalgia comic panels — needed for comic system
