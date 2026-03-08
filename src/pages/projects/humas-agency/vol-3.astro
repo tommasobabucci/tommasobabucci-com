@@ -2,11 +2,11 @@
 import ComicLayout from '../../../layouts/ComicLayout.astro';
 import ComicFrame from '../../../components/comic/ComicFrame.astro';
 import FadeIn from '../../../components/FadeIn.astro';
-import frames from '../../../data/humas-agency/vol2-script.json';
+import frames from '../../../data/humas-agency/vol3-script.json';
 
 // Build image path from frame number
 function frameSrc(num: number): string {
-  return `/images/projects/humas-agency/vol-2/frame-${String(num).padStart(2, '0')}.png`;
+  return `/images/projects/humas-agency/vol-3/frame-${String(num).padStart(2, '0')}.png`;
 }
 
 // Map layout values to CSS class names
@@ -24,10 +24,10 @@ function layoutName(layout: string): string {
 ---
 
 <ComicLayout
-  title="The Blackout — Huma's Agency Vol. 2"
-  description="Volume 2 of Huma's Agency: The system optimizes itself. Huma goes back to where it all started."
-  volumeLabel="Vol. 2"
-  ogImage="/images/projects/humas-agency/vol-2-cover.png"
+  title="The Override — Huma's Agency Vol. 3"
+  description="Volume 3 of Huma's Agency: Huma brings the old charter to Floor 30. The system gets what it's been missing."
+  volumeLabel="Vol. 3"
+  ogImage="/images/projects/humas-agency/vol-3-cover.png"
 >
   <!-- ============================================================
        COVER — Full viewport opening
@@ -35,15 +35,15 @@ function layoutName(layout: string): string {
   <section class="comic-cover">
     <div class="comic-cover-bg">
       <img
-        src="/images/projects/humas-agency/vol-2-cover.png"
-        alt="Huma stands before frozen screens on Floor 27 as the system enters deep optimization"
+        src="/images/projects/humas-agency/vol-3-cover.png"
+        alt="Huma and Raj stand before the old charter as the coalition prepares to ascend the Favor.ai tower"
         class="comic-cover-img"
       />
       <div class="comic-cover-overlay"></div>
     </div>
     <div class="comic-cover-content">
-      <span class="comic-cover-label">Volume 2</span>
-      <h1 class="comic-cover-title">The Blackout</h1>
+      <span class="comic-cover-label">Volume 3</span>
+      <h1 class="comic-cover-title">The Override</h1>
       <span class="comic-cover-series">Huma's Agency</span>
       <div class="comic-cover-scroll">
         <span>Scroll to begin</span>
@@ -53,7 +53,7 @@ function layoutName(layout: string): string {
   </section>
 
   <!-- ============================================================
-       FRAMES — 34 scenes
+       FRAMES — 36 scenes
        ============================================================ -->
   {frames.map((frame: any, i: number) => (
     <ComicFrame
@@ -64,6 +64,7 @@ function layoutName(layout: string): string {
       layout={layoutName(frame.displayNotes?.layout || 'featured')}
       dialogueSpeaker={frame.dialogueSpeaker}
       dialogueText={frame.dialogueText}
+      dialogues={frame.dialogues}
       isEager={i < 3}
     />
   ))}
@@ -75,14 +76,11 @@ function layoutName(layout: string): string {
     <FadeIn direction="scale">
       <div class="comic-ending-inner">
         <span class="comic-ending-dots">&middot;&ensp;&middot;&ensp;&middot;</span>
-        <h2 class="comic-ending-title">End of Volume 2</h2>
+        <h2 class="comic-ending-title">End of Huma's Agency</h2>
         <div class="comic-ending-line"></div>
         <div class="comic-ending-nav">
           <a href="/projects/humas-agency/" class="comic-ending-link">
             &larr; Huma's Agency
-          </a>
-          <a href="/projects/humas-agency/vol-3/" class="comic-ending-link">
-            Volume 3: The Override &rarr;
           </a>
         </div>
       </div>

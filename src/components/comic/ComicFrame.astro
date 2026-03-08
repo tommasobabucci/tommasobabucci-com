@@ -10,6 +10,7 @@ interface Props {
   layout: string;
   dialogueSpeaker?: string;
   dialogueText?: string;
+  dialogues?: Array<{speaker: string; text: string}>;
   isEager?: boolean;
 }
 
@@ -21,6 +22,7 @@ const {
   layout,
   dialogueSpeaker,
   dialogueText,
+  dialogues,
   isEager = false,
 } = Astro.props;
 
@@ -42,9 +44,13 @@ const layoutClass = `comic-frame--${layout.replace(/\s+/g, '-')}`;
 
       <div class="comic-frame-text">
         <p class="comic-prose">{readerText}</p>
-        {dialogueSpeaker && dialogueText && (
+        {dialogues && dialogues.length > 0 ? (
+          dialogues.map((d) => (
+            <DialogueBlock speaker={d.speaker} text={d.text} />
+          ))
+        ) : dialogueSpeaker && dialogueText ? (
           <DialogueBlock speaker={dialogueSpeaker} text={dialogueText} />
-        )}
+        ) : null}
       </div>
     </div>
   </FadeIn>

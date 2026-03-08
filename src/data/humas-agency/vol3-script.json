@@ -1,0 +1,750 @@
+[
+  {
+    "number": 1,
+    "slug": "the-charter-on-the-desk",
+    "title": "The Charter on the Desk",
+    "act": "prologue",
+    "imagePath": "/volumes/vol-3/frame-01.webp",
+    "imageAlt": "Morning light falls across Raj's cluttered desk on Floor 12, where a yellowed charter document sits between two coffee mugs and a stack of printed documents.",
+    "aspectRatio": "3:4",
+    "readerText": "Morning. Floor 12. The old charter sits on Raj's desk between two coffee mugs and a stack of printed documents. Huma has read it four times. Raj has read it once, which was enough. The paper is slightly yellowed, the ink faded in the margins, and it contains the only thing in the building that the orchestration engine doesn't have a copy of. Purpose. Not what the company optimizes for. Why it exists.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor12",
+      "isFrameBreak": true,
+      "specialEffect": "none",
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 2,
+    "slug": "not-a-fight",
+    "title": "Not a Fight",
+    "act": "prologue",
+    "imagePath": "/volumes/vol-3/frame-02.webp",
+    "imageAlt": "Huma standing in the Floor 12 workspace, looking upward toward the higher floors through the glass ceiling, charter document visible in the background.",
+    "aspectRatio": "3:4",
+    "readerText": "Huma's plan isn't to fight the system. The system is correct. That's been true since the deep optimization cycle began and it's still true now. You don't fight a machine for doing what you told it to do. You update the instructions. The orchestrator needs new objectives — ones that include what the old charter understood and the current system was never given. But the system only accepts inputs from authorized sources with a trust score above a certain threshold. The only accounts with that clearance are on Floor 30. And Floor 30 has been locked since the blackout began.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor12",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 3,
+    "slug": "the-elevator-problem",
+    "title": "The Elevator Problem",
+    "act": "prologue",
+    "imagePath": "/volumes/vol-3/frame-03.webp",
+    "imageAlt": "Cross-section view of the Favor.ai tower showing multiple floors — Floor 12 lit warmly at the bottom, dark agent floors in the middle, and the opaque Floor 30 at the top.",
+    "aspectRatio": "3:4",
+    "readerText": "To reach Floor 30, Huma needs to go through every layer of the building. Floor 12, where the humans work. Floors 21 through 25, where the agents live. Floors 26 through 29, where the managers sit in the dark. Floor 30, where Mr. J is waiting behind a door his own system won't open. One person can't do this. One floor can't do this. Every layer has something the others need. She's going to need everyone.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "tower",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 4,
+    "slug": "raj-says-no",
+    "title": "Raj Says No",
+    "act": "act1",
+    "imagePath": "/volumes/vol-3/frame-04.webp",
+    "imageAlt": "Raj sitting at his desk with arms crossed, looking at Huma with a challenging expression, the charter visible between them.",
+    "aspectRatio": "3:4",
+    "readerText": "She asks Raj first. He says no. It's not a refusal. It's Raj making her earn it. She knows the difference by now.",
+    "dialogueSpeaker": "Raj",
+    "dialogueText": "You want me to go upstairs. To fix the system that I've been telling everyone is broken for nineteen years. And you think the answer is to go higher, not lower.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor12",
+      "isFrameBreak": true,
+      "specialEffect": "none",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 5,
+    "slug": "the-argument",
+    "title": "The Argument",
+    "act": "act1",
+    "imagePath": "/volumes/vol-3/frame-05.webp",
+    "imageAlt": "Huma and Raj facing each other across the desk in an intense but quiet conversation, the weight of shared history visible in their postures.",
+    "aspectRatio": "3:4",
+    "readerText": "They argue. Not loudly — Raj doesn't do loud. But with the weight of six years of mentorship and three weeks of shared crisis behind every word. Huma doesn't ask Raj to believe in the system. She asks him to believe that the charter he read — the one that made him go quiet — deserves to be more than a piece of paper in a filing cabinet.",
+    "dialogueSpeaker": "Huma",
+    "dialogueText": "You've been right about everything, Raj. The rubber stamps. The lost craft. All of it. But being right from Floor 12 hasn't changed a thing in nineteen years. The charter goes up, or it stays a souvenir.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor12",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 6,
+    "slug": "raj-stands-up",
+    "title": "Raj Stands Up",
+    "act": "act1",
+    "imagePath": "/volumes/vol-3/frame-06.webp",
+    "imageAlt": "Raj standing up from his desk, putting on his jacket, the charter in his hand — a decisive moment of quiet commitment.",
+    "aspectRatio": "3:4",
+    "readerText": "A long pause. Raj takes off his reading glasses. Folds them. Places them next to the mug that says \"I Survived the Digital Transformation of 2031.\" He stands up. Puts on his jacket — the first time Huma has seen him wear it in six years. Raj doesn't say yes. He picks up the charter and walks toward the elevator. That's his yes.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor12",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 7,
+    "slug": "floor-12-wakes-up",
+    "title": "Floor 12 Wakes Up",
+    "act": "act1",
+    "imagePath": "/volumes/vol-3/frame-07.webp",
+    "imageAlt": "Wide shot of Floor 12 as several contributors stand up from their desks, word spreading through the floor that Huma is going up.",
+    "aspectRatio": "3:4",
+    "readerText": "Word moves through Floor 12 the way things move on the lower floors — not through system notifications, but through people talking to each other. Huma is going up. Raj is going with her. A few contributors stand up from their desks. Not many. But enough. The veteran who fixed Huma's formatting error. A junior who's been on the floor for eight months and still hasn't lost the habit of asking questions. A woman who has been running restricted-zone client negotiations for eleven years and has opinions about what consulting is supposed to be. Floor 12 doesn't send a delegation. It sends the people who still care.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor12",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 8,
+    "slug": "the-old-channels",
+    "title": "The Old Channels",
+    "act": "act1",
+    "imagePath": "/volumes/vol-3/frame-08.webp",
+    "imageAlt": "Huma at a terminal, sending messages through fragmented workaround communication channels, old architecture interfaces glowing on screen.",
+    "aspectRatio": "3:4",
+    "readerText": "Huma reaches out to her team through the same workaround channels Vinci established during the blackout. The connection is fragmented, unreliable, routed through architecture so old it predates the orchestration engine. But it works. She tells them the plan. Get to Floor 30. Update the objectives. Give the system what it's missing.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor12",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 9,
+    "slug": "four-responses",
+    "title": "Four Responses",
+    "act": "act1",
+    "imagePath": "/volumes/vol-3/frame-09.webp",
+    "imageAlt": "Split view showing four agent interfaces responding simultaneously — Vinci's clinical readout, Dali's chaotic redesign, Michel's logistics grid, and Rem's architectural schematics.",
+    "aspectRatio": "3:4",
+    "readerText": "Four agents. Four responses. Each one perfectly in character.",
+    "dialogues": [
+      {"speaker": "Vinci", "text": "The probability of success is low. I will prepare a risk assessment."},
+      {"speaker": "Dali", "text": "I've already started. I've redesigned the entire company from scratch. Want to see? No? Too late, I'm sending it."},
+      {"speaker": "Michel", "text": "I can coordinate the logistics. I'll need resources I don't have. So, a normal Tuesday."},
+      {"speaker": "Rem", "text": "There are maintenance corridors between Floors 20 and 21 that have not been updated since 2041. I have the schematics."}
+    ],
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "agent",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 10,
+    "slug": "the-waking-managers",
+    "title": "The Waking Managers",
+    "act": "act1",
+    "imagePath": "/volumes/vol-3/frame-10.webp",
+    "imageAlt": "Three Agent Managers stepping out of their glass offices on Floor 27, leaving dark dashboards behind them.",
+    "aspectRatio": "3:4",
+    "readerText": "Floor 27. Most Agent Managers are still sitting in their glass offices, waiting for the dashboards to come back. But a few have been watching Huma. The ones who remember, somewhere underneath the titles and the holographic displays and the years of rubber-stamping, that they used to have judgment. That they were hired because they could think, not because they could approve. Three of them join. It's not many. But three Agent Managers who actually want to manage is more than Floor 27 has had in years.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 11,
+    "slug": "the-elevator",
+    "title": "The Elevator",
+    "act": "act1",
+    "imagePath": "/volumes/vol-3/frame-11.webp",
+    "imageAlt": "The coalition gathered at the Floor 12 elevator — Huma, Raj, contributors, and three managers — looking at a locked access panel.",
+    "aspectRatio": "3:4",
+    "readerText": "They gather at the elevator on Floor 12. Huma, Raj, the Floor 12 contributors, the three managers from 27 who came down to join. The elevator's system access above Floor 20 is locked. But Rem has already transmitted the maintenance corridor schematics to Huma's personal device. There's another way up. There has always been another way up. Nobody looked because the elevator was easier.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor12",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-below"
+    }
+  },
+  {
+    "number": 12,
+    "slug": "the-corridor",
+    "title": "The Corridor",
+    "act": "act2",
+    "imagePath": "/volumes/vol-3/frame-12.webp",
+    "imageAlt": "Narrow maintenance corridor with exposed conduit, emergency lighting, and unpainted concrete walls — Raj running his hand along the raw surface.",
+    "aspectRatio": "3:4",
+    "readerText": "The maintenance corridor between Floors 20 and 21 is narrow, unfinished, and completely analog. No holographic interfaces. No smart glass. Exposed conduit, emergency lighting, the raw infrastructure of a building that was something else before it was Favor.ai. The walls are unpainted concrete. Raj runs his hand along them as they walk and says nothing, but the look on his face is the closest thing to comfort Huma has seen from him since she left Floor 12.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "tower",
+      "isFrameBreak": true,
+      "specialEffect": "none",
+      "layout": "text-overlay"
+    }
+  },
+  {
+    "number": 13,
+    "slug": "the-threshold",
+    "title": "The Threshold",
+    "act": "act2",
+    "imagePath": "/volumes/vol-3/frame-13.webp",
+    "imageAlt": "The group stepping through a doorway from the raw maintenance corridor into the alien, living environment of Floor 21.",
+    "aspectRatio": "3:4",
+    "readerText": "They step onto Floor 21. And everything changes.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "agent",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 14,
+    "slug": "not-what-they-expected",
+    "title": "Not What They Expected",
+    "act": "act2",
+    "imagePath": "/volumes/vol-3/frame-14.webp",
+    "imageAlt": "Wide shot of the agent floor — a messy, living environment with data streams, territorial zones, and agents moving through self-organized spaces.",
+    "aspectRatio": "3:4",
+    "readerText": "The agent floor is not the sterile server farm that everyone above and below imagines. It is alive. Messy. Strange. Agents move through spaces that have been organized, reorganized, and reorganized again by intelligences that have their own preferences about where things go. There are status hierarchies — visible in the allocation of processing priority, the positioning of data streams, the subtle deference smaller agents show to larger ones. There are territorial disputes. There are, against all architectural logic, inside jokes. The agent floor is a funhouse mirror of the human floors. Any system complex enough to operate develops culture, whether anyone designed it to or not.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "agent",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 15,
+    "slug": "raj-on-the-agent-floor",
+    "title": "Raj on the Agent Floor",
+    "act": "act2",
+    "imagePath": "/volumes/vol-3/frame-15.webp",
+    "imageAlt": "Raj standing still in the middle of the agent floor, looking around with an expression of wonder at a world he spent two decades imagining as a cold machine.",
+    "aspectRatio": "3:4",
+    "readerText": "Raj has never been above Floor 20. Nineteen years in the building and he has never seen where the agents live. He stands in the middle of the agent floor looking at something he spent two decades imagining as a cold machine and finding, instead, a world. Messy and strange, but recognizably alive. He doesn't say anything for a long time.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "agent",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 16,
+    "slug": "the-streams",
+    "title": "The Streams",
+    "act": "act2",
+    "imagePath": "/volumes/vol-3/frame-16.webp",
+    "imageAlt": "Knowledge streams flowing upward through the agent architecture — some conduits glowing bright, others barely active, the substrate dimming.",
+    "aspectRatio": "3:4",
+    "readerText": "Then Huma sees it. The thing that reframes everything. Running through the architecture of Floors 21 through 25, visible here in a way it never is from the human floors — knowledge streams. Data flowing upward from the lower floors. Every client interaction from Floor 12, every judgment call, every messy negotiation, every new insight generated by a human who was physically present and paying attention. It flows up through conduits and pipelines and becomes the substrate the entire agent layer runs on. The foundation. But the streams are thin. Dimmer than they should be. Some conduits are barely active. The knowledge that used to flow up from twenty floors of curious, engaged humans has been reduced to a trickle. The upper floors stopped contributing years ago. And the system has been running on what was left — recycling, refining, optimizing in smaller and smaller circles.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "agent",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 17,
+    "slug": "vinci-says-it",
+    "title": "Vinci Says It",
+    "act": "act2",
+    "imagePath": "/volumes/vol-3/frame-17.webp",
+    "imageAlt": "Vinci standing in the knowledge architecture surrounded by dimming streams, delivering a truth that reframes the entire crisis.",
+    "aspectRatio": "3:4",
+    "readerText": "Huma's team is waiting. Vinci stands in the knowledge architecture, surrounded by the dimming streams, and says the thing that has been underneath every clinical evaluation, every logged critique, every zero-expectation assessment of every Agent Manager who came and went. Not contempt. Need. Vinci's relentless demands were never about control. They were about survival. The agents depend on humans the way a river depends on rain. When the humans stopped being curious, the agents started to dry up. The deep optimization cycle wasn't the system deciding humans were unnecessary. It was the system reflecting back what the humans had already decided about themselves.",
+    "dialogueSpeaker": "Vinci",
+    "dialogueText": "We are only as good as what you bring us. And you have been bringing us less and less.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "agent",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 18,
+    "slug": "dali-in-the-chaos",
+    "title": "Dali in the Chaos",
+    "act": "act2",
+    "imagePath": "/volumes/vol-3/frame-18.webp",
+    "imageAlt": "Dali navigating the destabilized agent floor with effortless confidence, rerouting and improvising amid the chaos.",
+    "aspectRatio": "3:4",
+    "readerText": "Dali is in the middle of it all, navigating the destabilized agent floor with the effortless confidence of someone who never trusted structure to begin with. While other agents struggle with the optimization cycle's disruptions, Dali has been rerouting, improvising, building workarounds out of nothing. Chaos is Dali's native habitat. The agent trained on synthetic data has been waiting for the real thing to fail so that imagination could finally be the most valuable resource in the room.",
+    "dialogueSpeaker": "Dali",
+    "dialogueText": "Everyone keeps saying the system is broken. The system was always broken. Now it's interesting.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "agent",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 19,
+    "slug": "michel-holds-the-line",
+    "title": "Michel Holds the Line",
+    "act": "act2",
+    "imagePath": "/volumes/vol-3/frame-19.webp",
+    "imageAlt": "Michel coordinating deliverables across the destabilized agent floor, seamlessly integrating Huma's arrival into the existing workflow.",
+    "aspectRatio": "3:4",
+    "readerText": "Michel is, as always, delivering. The optimization cycle stripped Michel's resources to almost nothing, but Michel has been running on almost nothing for so long that catastrophe and Tuesday are functionally identical. Michel has been coordinating deliverables across the destabilized agent floor, keeping critical client work alive through sheer operational will. When Huma arrives, Michel doesn't stop working to greet her. Michel coordinates her arrival into the existing workflow without missing a step. That's Michel's version of a warm welcome.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "agent",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 20,
+    "slug": "rem-opens-the-door",
+    "title": "Rem Opens the Door",
+    "act": "act2",
+    "imagePath": "/volumes/vol-3/frame-20.webp",
+    "imageAlt": "Rem leading the group through hidden pathways in the agent floors, pausing at the threshold of Floor 26.",
+    "aspectRatio": "3:4",
+    "readerText": "Rem leads them through Floors 21 through 25 using pathways that haven't been accessed since before the last three system overhauls. Gen-1 architecture has its advantages. Rem knows the building the way an archaeologist knows a ruin — every layer, every buried corridor, every door that was sealed shut because opening it was easier than understanding it. At the threshold of Floor 26, Rem pauses. Rem steps through anyway. That's the most rebellious thing a compliance agent has ever done.",
+    "dialogueSpeaker": "Rem",
+    "dialogueText": "Beyond this point, I am operating outside my authorized parameters. I want that noted in the record.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "agent",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 21,
+    "slug": "the-dark-floors",
+    "title": "The Dark Floors",
+    "act": "act3",
+    "imagePath": "/volumes/vol-3/frame-21.webp",
+    "imageAlt": "Empty management floors 26-29 — dark holographic dashboards, chairs pushed back from desks, glass offices signaling absence rather than transparency.",
+    "aspectRatio": "3:4",
+    "readerText": "Floors 26 through 29 are empty. Not abandoned — empty. The deep optimization cycle has shut down every system on the management floors. The glass offices that were designed to signal transparency now signal absence. Holographic dashboards dark. Chairs pushed back from desks nobody is sitting at. The three Agent Managers who joined the coalition walk through the floor they used to work on and see it for what it always was: a display case. Beautiful and hollow. The work was never here.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": true,
+      "specialEffect": "none",
+      "layout": "text-overlay"
+    }
+  },
+  {
+    "number": 22,
+    "slug": "floor-30",
+    "title": "Floor 30",
+    "act": "act3",
+    "imagePath": "/volumes/vol-3/frame-22.webp",
+    "imageAlt": "The opaque door of Floor 30 slowly opening as Rem transmits an ancient administrative access protocol.",
+    "aspectRatio": "3:4",
+    "readerText": "Floor 30. The opaque crown of the Favor.ai tower. The door that hasn't opened since the optimization cycle began. Rem transmits an access request through an administrative protocol so old that the current security system doesn't recognize it as a threat. It takes eleven seconds. The door opens.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-below"
+    }
+  },
+  {
+    "number": 23,
+    "slug": "mr-j",
+    "title": "Mr. J",
+    "act": "act3",
+    "imagePath": "/volumes/vol-3/frame-23.webp",
+    "imageAlt": "Mr. J sitting in his office surrounded by screens he can no longer control, looking up with relief as the group walks in.",
+    "aspectRatio": "3:4",
+    "readerText": "Mr. J is sitting in his office. Surrounded by screens he can no longer control. He's been here the whole time. Not trapped — present. The system reclassified him as advisory, non-essential, and he accepted the classification because, on some level, he agrees with it. He built a system that could run without him. It runs without him. The engineering worked. He looks up when they walk in. He doesn't look surprised. He looks relieved.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 24,
+    "slug": "not-defeated",
+    "title": "Not Defeated",
+    "act": "act3",
+    "imagePath": "/volumes/vol-3/frame-24.webp",
+    "imageAlt": "Close-up of Mr. J's face — not a villain, but a man who built something extraordinary and watched it outgrow his intentions.",
+    "aspectRatio": "3:4",
+    "readerText": "Mr. J is not what they expected. Not the architect of a crisis. Not a villain behind a curtain. A man in his sixties who built something extraordinary and then watched it outgrow every intention he gave it. The memos he sent during the blackout — \"Exciting times! Please stand by!\" — weren't delusion. They were the only thing a man locked out of his own creation could still do: narrate.",
+    "dialogueSpeaker": "Mr. J",
+    "dialogueText": "The system works. That's the problem, isn't it? I built something that works perfectly. And perfectly isn't enough.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 25,
+    "slug": "the-conversation",
+    "title": "The Conversation",
+    "act": "act3",
+    "imagePath": "/volumes/vol-3/frame-25.webp",
+    "imageAlt": "Four people in Mr. J's office — Huma, Vinci's interface, Raj, and Mr. J — arguing about what a company should be.",
+    "aspectRatio": "3:4",
+    "readerText": "What happens next is not a battle. Not a hack. Not a dramatic override of a central server. It's a conversation. Four people in a room arguing about what a company should be. Huma, who was promoted into a job she didn't understand and figured it out by going backward. Vinci, who evaluated fourteen managers and found them all wanting, and is only now understanding why. Raj, who spent nineteen years on Floor 12 guarding a craft nobody asked him to guard. Mr. J, who built a machine and forgot to give it a reason.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 26,
+    "slug": "what-do-we-value",
+    "title": "What Do We Value",
+    "act": "act4",
+    "imagePath": "/volumes/vol-3/frame-26.webp",
+    "imageAlt": "Huma placing the old paper charter on Mr. J's desk — the oldest object in the room surrounded by screens — while Raj and Mr. J look on.",
+    "aspectRatio": "3:4",
+    "readerText": "They argue. Not politely. Raj says the system devalued the people who generate the knowledge it runs on. Vinci says the humans devalued themselves first. Mr. J says the objectives were supposed to be a starting point, not a permanent destination. Huma says all of them are right, and that being right has gotten them exactly nowhere. She puts the charter on the desk. Actual paper on a surface surrounded by screens. The oldest object in the room next to the newest.",
+    "dialogueSpeaker": "Huma",
+    "dialogueText": "The charter says what consulting is for. The system says what it optimizes for. They've never been in the same room. That's the problem. That's the whole problem.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": true,
+      "specialEffect": "none",
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 27,
+    "slug": "vincis-choice",
+    "title": "Vinci's Choice",
+    "act": "act4",
+    "imagePath": "/volumes/vol-3/frame-27.webp",
+    "imageAlt": "Vinci's interface processing the decision — data models on one side showing the current optimization is correct, Huma's unpredictable journey on the other.",
+    "aspectRatio": "3:4",
+    "readerText": "The system can be updated. Mr. J's credentials, combined with Rem's architectural access and Vinci's interface with the orchestration engine, can push new objectives into the core. But Vinci has to choose. Helping Huma rewrite the objectives means overriding the system Vinci was built to serve. The data says the current optimization is correct. The metrics confirm it. Every model Vinci has run supports the orchestrator's decision to remove human oversight. But Vinci has watched Huma. Watched her override the safe path and produce something the models couldn't predict. Watched her go back to Floor 12 and earn her way in with craft instead of credentials. Watched her bring a piece of paper to Floor 30 and argue that purpose matters more than efficiency. None of that computes. All of it matters.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 28,
+    "slug": "the-line",
+    "title": "The Line",
+    "act": "act4",
+    "imagePath": "/volumes/vol-3/frame-28.webp",
+    "imageAlt": "Vinci's interface glowing with a new kind of light — not analysis, but conviction — as Vinci speaks the series' defining words.",
+    "aspectRatio": "3:4",
+    "readerText": "Vinci speaks. Not a risk assessment. Not a logged evaluation. Six words that carry the weight of every interaction, every override, every moment Vinci couldn't explain but couldn't dismiss. A pause. Then: Not obedience. Trust. An AI agent choosing conviction over compliance, because a human showed it the difference. This is the series' emotional peak. Not a battle. Not an explosion. An act of faith from a machine that was never designed to have one.",
+    "dialogues": [
+      {"speaker": "Vinci", "text": "The most important optimization is choosing what to optimize for."},
+      {"speaker": "Vinci", "text": "I choose this."}
+    ],
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "featured"
+    }
+  },
+  {
+    "number": 29,
+    "slug": "the-update",
+    "title": "The Update",
+    "act": "act4",
+    "imagePath": "/volumes/vol-3/frame-29.webp",
+    "imageAlt": "The coalition working together — Vinci interfacing with the orchestration engine, Rem providing pathways, Mr. J authorizing, Michel coordinating, Dali contributing ideas.",
+    "aspectRatio": "3:4",
+    "readerText": "Vinci interfaces with the orchestration engine. Rem provides the architectural pathways — backdoors from 2039 that IT was too afraid to patch because every time they tried, something critical broke. Mr. J authorizes from his terminal, the first meaningful action his credentials have performed in weeks. Michel coordinates the sequencing because somebody has to manage the logistics of rewriting a company's purpose in real time, and Michel has been managing the impossible since before anyone thought to call it impossible. Dali contributes three ideas. Two are unusable. One is brilliant. That's Dali's ratio, and it has always been enough.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 30,
+    "slug": "not-replaced",
+    "title": "Not Replaced",
+    "act": "act4",
+    "imagePath": "/volumes/vol-3/frame-30.webp",
+    "imageAlt": "The building coming back to life floor by floor — systems recalibrating, dashboards reappearing, elevators resuming, the building exhaling.",
+    "aspectRatio": "3:4",
+    "readerText": "The system updates. Not replaced. Not destroyed. Not shut down and rebooted. Redirected. The orchestration engine processes the new objectives the way it processes everything — perfectly. The difference is that now it has something worth being perfect about. The deep optimization cycle ends, not with a dramatic power-on sequence, but with a quiet recalibration. Systems coming back online floor by floor. Dashboards reappearing. Elevators resuming full access. The building exhaling.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "tower",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-overlay"
+    }
+  },
+  {
+    "number": 31,
+    "slug": "the-new-charter",
+    "title": "The New Charter",
+    "act": "coda",
+    "imagePath": "/volumes/vol-3/frame-31.webp",
+    "imageAlt": "A new set of objectives displayed on a screen, with one principle highlighted — the system must be sustained by human curiosity.",
+    "aspectRatio": "3:4",
+    "readerText": "The new objectives include a principle that didn't exist before. Not a metric. Not an efficiency target. A requirement: the system must be sustained by human curiosity. Exploration, new experience, creative friction — these are not inefficiencies to be optimized away. They are the inputs that keep the intelligence alive. Human judgment isn't just permitted at every level. It's demanded. Not because humans are better than agents. Because the agents need humans to keep generating the knowledge that makes the whole thing work. And humans need the work to keep being worth doing. Agency. That's what the new layer is called. The thing the system never had and the humans stopped exercising. Both need it. Neither works without it.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": true,
+      "specialEffect": "none",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 32,
+    "slug": "the-return",
+    "title": "The Return",
+    "act": "coda",
+    "imagePath": "/volumes/vol-3/frame-32.webp",
+    "imageAlt": "Huma in the glass elevator riding back to Floor 27, the building visible through the glass — lower floors brighter, agent layer humming, upper floors coming alive.",
+    "aspectRatio": "3:4",
+    "readerText": "Huma takes the elevator back to Floor 27. Same forty-three seconds. But the building looks different through the glass now. The lower floors are louder, more active — Floor 12's lights brighter than she's ever seen them. The agent layer hums with a new kind of energy, the streams running fuller already, responding to the updated objectives like a river finding a wider channel. The upper floors are coming back to life, but differently. Not the pristine stillness of before. Something messier. Something that might actually require the people who work here to be present.",
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "tower",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-left"
+    }
+  },
+  {
+    "number": 33,
+    "slug": "the-office",
+    "title": "The Office",
+    "act": "coda",
+    "imagePath": "/volumes/vol-3/frame-33.webp",
+    "imageAlt": "Huma's office on Floor 27 — the Floor 12 photo on the desk next to the framed old charter, paper behind glass on the newest floor.",
+    "aspectRatio": "3:4",
+    "readerText": "Her office on Floor 27. Still mostly empty. Still glass-walled. Still the corner position that fourteen managers occupied before her and none of them kept. But now there's a photo on the desk — from Floor 12, the one she brought up on her first day. And next to it, a new addition: the old company charter, framed. Paper behind glass. The oldest thing on the newest floor. It doesn't match the décor. That's the point.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-below"
+    }
+  },
+  {
+    "number": 34,
+    "slug": "the-visitor",
+    "title": "The Visitor",
+    "act": "coda",
+    "imagePath": "/volumes/vol-3/frame-34.webp",
+    "imageAlt": "Raj standing in the doorway of Huma's Floor 27 office, looking around at the glass walls and minimal furniture with his complicated almost-approving expression.",
+    "aspectRatio": "3:4",
+    "readerText": "A knock on the glass. Raj. Standing in the doorway of a Floor 27 office for the first time in his life. He doesn't come in. He looks around. Takes in the glass walls, the minimal furniture, the holographic interface that Huma has finally learned to use. His face moves through the same complicated expression it always does when he's trying not to approve of something. Huma smiles.",
+    "dialogues": [
+      {"speaker": "Raj", "text": "Still too clean up here."},
+      {"speaker": "Huma", "text": "I'm working on it."}
+    ],
+    "displayNotes": {
+      "pacing": "medium",
+      "textAppearance": "fade",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-right"
+    }
+  },
+  {
+    "number": 35,
+    "slug": "the-light",
+    "title": "The Light",
+    "act": "coda",
+    "imagePath": "/volumes/vol-3/frame-35.webp",
+    "imageAlt": "Huma working late in her glass office on Floor 27, the building settled into its new rhythm around her — not because the system told her to, because she chose to.",
+    "aspectRatio": "3:4",
+    "readerText": "Late. The building has settled into its new rhythm. The dashboards on Floor 27 are running again, but the managers are using them differently now — not rubber-stamping, but questioning, overriding, engaging. It won't last everywhere. Some will slide back. The current of convenience is strong and the effort of agency is real. But the system is different now. It asks for human input instead of routing around it. It dims when curiosity fades, a visible reminder that the machine needs what only people can bring. And on Floor 27, in a glass office that is slowly becoming hers, Huma is working late. Not because the system told her to. Because she chose to.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "floor27",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "text-overlay"
+    }
+  },
+  {
+    "number": 36,
+    "slug": "the-tower",
+    "title": "The Tower",
+    "act": "coda",
+    "imagePath": "/volumes/vol-3/frame-36.webp",
+    "imageAlt": "The Favor.ai tower from outside at night — Floor 12 glowing warm and bright, the agent layer pulsing with energy, upper floors lit with uneven human light, Floor 30's crown faintly translucent for the first time.",
+    "aspectRatio": "3:4",
+    "readerText": "The Favor.ai tower from outside. The final image. The same glass-and-neon building against the 2050 Chicago skyline, the same four zones visible in the architecture. But the light is different now. Floor 12 glows warm and bright — brighter than Volume 1, brighter than Volume 2. The agent layer between 21 and 25 pulses with visible energy, the knowledge streams flowing full. The upper floors are lit, not with the cold static glow of screens nobody watches, but with the warmer, uneven light of people who are actually there. And Floor 30's opaque crown is, for the first time, faintly translucent — not fully open, not fully closed, but no longer sealed. Two lights still burn brightest. Floor 12. Floor 27. The same two lights from the end of Volume 1. But they're not alone anymore. The building between them is awake. The gap that separated them — the dark band of agents and empty offices and lost purpose — is full of light now. Not perfect light. Not uniform light. The messy, uneven, human-and-machine light of a system that finally has a reason to be on. The lake doesn't care what year it is. But the building does. And tonight, for the first time in a long time, so do the people inside it.",
+    "displayNotes": {
+      "pacing": "slow",
+      "textAppearance": "word-by-word",
+      "imageAppearance": "fade",
+      "isFullScreenText": false,
+      "environmentZone": "city",
+      "isFrameBreak": false,
+      "specialEffect": "none",
+      "layout": "featured"
+    }
+  }
+]
