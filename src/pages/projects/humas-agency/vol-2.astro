@@ -2,17 +2,18 @@
 import ComicLayout from '../../../layouts/ComicLayout.astro';
 import ComicFrame from '../../../components/comic/ComicFrame.astro';
 import FadeIn from '../../../components/FadeIn.astro';
-import frames from '../../../data/humas-agency/vol1-script.json';
+import frames from '../../../data/humas-agency/vol2-script.json';
 
 // Build image path from frame number
 function frameSrc(num: number): string {
-  return `/images/projects/humas-agency/vol-1/frame-${String(num).padStart(2, '0')}.png`;
+  return `/images/projects/humas-agency/vol-2/frame-${String(num).padStart(2, '0')}.png`;
 }
 
 // Map layout values to CSS class names
 function layoutName(layout: string): string {
   const map: Record<string, string> = {
     'featured': 'featured',
+    'standard': 'featured',
     'text-left': 'text-left',
     'text-right': 'text-right',
     'text-overlay': 'text-overlay',
@@ -23,10 +24,10 @@ function layoutName(layout: string): string {
 ---
 
 <ComicLayout
-  title="The Promotion — Huma's Agency Vol. 1"
-  description="Volume 1 of Huma's Agency: Huma moves from Floor 12 to Floor 27. Everything changes."
-  volumeLabel="Vol. 1"
-  ogImage="/images/projects/humas-agency/vol-1-cover.png"
+  title="The Blackout — Huma's Agency Vol. 2"
+  description="Volume 2 of Huma's Agency: The system optimizes itself. Huma goes back to where it all started."
+  volumeLabel="Vol. 2"
+  ogImage="/images/projects/humas-agency/vol-2-cover.png"
 >
   <!-- ============================================================
        COVER — Full viewport opening
@@ -34,15 +35,15 @@ function layoutName(layout: string): string {
   <section class="comic-cover">
     <div class="comic-cover-bg">
       <img
-        src="/images/projects/humas-agency/vol-1-cover.png"
-        alt="Huma stands in a glass elevator between the warm lower floors and the cold upper floors of the Favor.ai tower"
+        src="/images/projects/humas-agency/vol-2-cover.png"
+        alt="Huma stands before frozen screens on Floor 27 as the system enters deep optimization"
         class="comic-cover-img"
       />
       <div class="comic-cover-overlay"></div>
     </div>
     <div class="comic-cover-content">
-      <span class="comic-cover-label">Volume 1</span>
-      <h1 class="comic-cover-title">The Promotion</h1>
+      <span class="comic-cover-label">Volume 2</span>
+      <h1 class="comic-cover-title">The Blackout</h1>
       <span class="comic-cover-series">Huma's Agency</span>
       <div class="comic-cover-scroll">
         <span>Scroll to begin</span>
@@ -52,7 +53,7 @@ function layoutName(layout: string): string {
   </section>
 
   <!-- ============================================================
-       FRAMES — 32 scenes
+       FRAMES — 34 scenes
        ============================================================ -->
   {frames.map((frame: any, i: number) => (
     <ComicFrame
@@ -74,15 +75,13 @@ function layoutName(layout: string): string {
     <FadeIn direction="scale">
       <div class="comic-ending-inner">
         <span class="comic-ending-dots">&middot;&ensp;&middot;&ensp;&middot;</span>
-        <h2 class="comic-ending-title">End of Volume 1</h2>
+        <h2 class="comic-ending-title">End of Volume 2</h2>
         <div class="comic-ending-line"></div>
         <div class="comic-ending-nav">
           <a href="/projects/humas-agency/" class="comic-ending-link">
             &larr; Huma's Agency
           </a>
-          <a href="/projects/humas-agency/vol-2/" class="comic-ending-link">
-            Volume 2: The Blackout &rarr;
-          </a>
+          <span class="comic-ending-next">Volume 3: The Override — Coming Soon</span>
         </div>
       </div>
     </FadeIn>
