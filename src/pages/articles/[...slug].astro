@@ -23,7 +23,7 @@ const readingTime = Math.max(1, Math.round(wordCount / 200));
   title={article.data.title}
   description={article.data.description}
   date={article.data.date}
-  tag={article.data.tag}
+  tag={article.data.tags[0]}
   coverImage={article.data.coverImage}
   readingTime={readingTime}
 >

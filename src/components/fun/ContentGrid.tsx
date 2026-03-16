@@ -349,10 +349,12 @@ export default function ContentGrid({ items }: ContentGridProps) {
     return ['All', ...unique];
   }, [items]);
 
-  const typeFilters = ['All', 'Article', 'Project'];
+  const typeFilters = ['All', 'Articles', 'Projects'];
+
+  const typeMap: Record<string, string> = { Articles: 'Article', Projects: 'Project' };
 
   const filtered = items
-    .filter((item) => activeType === 'All' || item.contentType === activeType)
+    .filter((item) => activeType === 'All' || item.contentType === typeMap[activeType])
     .filter(
       (item) =>
         activeSubject === 'All' || item.subjectTags.includes(activeSubject)

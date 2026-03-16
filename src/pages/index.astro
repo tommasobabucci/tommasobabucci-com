@@ -31,7 +31,7 @@ const contentItems = [
     description: article.data.description,
     date: article.data.date.toISOString(),
     contentType: 'Article' as const,
-    subjectTags: article.data.tags.length > 0 ? article.data.tags : [article.data.tag],
+    subjectTags: article.data.tags,
     coverImage: article.data.coverImage,
     externalUrl: article.data.externalUrl,
     href: article.data.externalUrl || `/articles/${article.id.replace(/\.mdx?$/, '')}/`,

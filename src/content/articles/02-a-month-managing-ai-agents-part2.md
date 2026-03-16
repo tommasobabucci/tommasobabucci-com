@@ -2,8 +2,7 @@
 title: "A Month Managing AI Agents (Part 2)"
 description: "One month after the exhilarating Day 1 with AI agents: what sustained it, what broke down, and the new skills nobody told me I'd need."
 date: 2026-02-16
-tag: "AI & Work"
-tags: ["AI", "People and Work"]
+tags: ["Future of Work", "AI Strategy"]
 published: true
 coverImage: "/images/articles/02.png"
 ---

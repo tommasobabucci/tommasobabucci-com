@@ -2,8 +2,7 @@
 title: "A Day Managing AI Agents (Part 1)"
 description: "What a full workday building with Replit's AI agents looks like — and what it taught me about the future of creative work."
 date: 2026-01-19
-tag: "AI & Work"
-tags: ["AI", "Tech"]
+tags: ["Tech and Innovation", "Future of Work"]
 published: true
 coverImage: "/images/articles/01.png"
 ---

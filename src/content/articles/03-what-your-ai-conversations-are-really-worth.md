@@ -2,8 +2,7 @@
 title: "What Your AI Conversations Are Really Worth"
 description: "OpenAI announced ads are coming to ChatGPT. Here's why they're uniquely positioned to reinvent advertising — and what it means for the AI market."
 date: 2026-02-02
-tag: "AI & Business"
-tags: ["AI", "AI Strategy"]
+tags: ["AI Strategy"]
 published: true
 coverImage: "/images/articles/03.png"
 ---

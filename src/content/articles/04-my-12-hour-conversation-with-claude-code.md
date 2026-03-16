@@ -2,8 +2,7 @@
 title: "My 12-Hour Conversation with Claude Code"
 description: "A weekend visa application turned into a 12-hour AI coding spiral. What I learned about creative direction, skill floors, and the collapse of activation energy."
 date: 2026-03-02
-tag: "AI & Work"
-tags: ["AI", "Tech"]
+tags: ["Tech and Innovation", "Future of Work"]
 published: true
 coverImage: "/images/articles/04.png"
 ---
