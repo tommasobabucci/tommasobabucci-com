@@ -34,7 +34,7 @@ function useIsMobile() {
 
 /* ---- Desktop card (full vertical layout) ---- */
 function DesktopCard({ item }: { item: ContentItem }) {
-  const isExternal = !!item.externalUrl;
+  const isExternal = !!item.externalUrl && item.externalUrl.startsWith('http');
   const formattedDate = item.date
     ? new Date(item.date).toLocaleDateString('en-US', {
         year: 'numeric',
@@ -209,7 +209,7 @@ function DesktopCard({ item }: { item: ContentItem }) {
 
 /* ---- Mobile card (compact horizontal layout) ---- */
 function MobileCard({ item }: { item: ContentItem }) {
-  const isExternal = !!item.externalUrl;
+  const isExternal = !!item.externalUrl && item.externalUrl.startsWith('http');
   const formattedDate = item.date
     ? new Date(item.date).toLocaleDateString('en-US', {
         year: 'numeric',

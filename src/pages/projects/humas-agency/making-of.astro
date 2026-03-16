@@ -1,0 +1,163 @@
+---
+import ComicLayout from '../../../layouts/ComicLayout.astro';
+import FadeIn from '../../../components/FadeIn.astro';
+---
+
+<ComicLayout
+  title="The Making of Huma's Agency"
+  description="The five-step process behind Huma's Agency, a three-volume digital comic about the future of work in AI-native organizations."
+  ogImage="/images/articles/05.png"
+>
+  <!-- Hero -->
+  <section class="making-of-hero">
+    <div class="making-of-hero-bg">
+      <img
+        src="/images/articles/05.png"
+        alt="The Making of Huma's Agency"
+        class="making-of-hero-img"
+      />
+      <div class="making-of-hero-overlay"></div>
+    </div>
+    <div class="making-of-hero-content">
+      <FadeIn>
+        <span class="making-of-hero-label">Article</span>
+        <h1 class="making-of-hero-title">How I Made an AI Graphic Novel, and What It Taught Me About Working With AI</h1>
+        <p class="making-of-hero-subtitle">The five-step process behind Huma's Agency, a three-volume digital comic about the future of work in AI-native organizations.</p>
+      </FadeIn>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="making-of-video">
+    <FadeIn>
+      <div class="video-short">
+        <iframe
+          src="https://www.youtube.com/embed/8Nr9EPxpGhI"
+          title="Making Huma's Agency"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </FadeIn>
+  </section>
+
+  <!-- Article body -->
+  <article class="making-of-body">
+    <div class="making-of-prose">
+
+      <p>Everyone is talking about AI-native enterprises. Nobody is showing you the inside.</p>
+
+      <p>What does it actually feel like when half your team is made of AI agents? When the org chart has floors for humans and separate floors for software that has opinions? When your job title changes from "consultant" to "agent manager" and nobody explains what that means?</p>
+
+      <p>I work in AI strategy consulting. I spend my days helping organizations figure out what "AI-native" looks like in practice. And the more time I spent inside that conversation, the more I noticed something: the entire industry is racing to build agentic enterprises, but in the rush to build them, almost nobody is stopping to interrogate the future they're building. What does it actually feel like to work inside one of these organizations? The industry has plenty of frameworks, plenty of roadmaps, plenty of thought leadership about what AI transformation should look like on paper. What it doesn't have is a story that makes you feel it.</p>
+
+      <p>So I made one.</p>
+
+      <h2>What Is Huma's Agency?</h2>
+
+      <p><a href="/projects/humas-agency/">Huma's Agency</a> is an AI-generated digital graphic novel set in 2050 Chicago. It follows Huma, a young woman who gets auto-promoted from Floor 12, where humans do the work, to Floor 27, where humans manage AI agents that do the work. She didn't apply for the job. The first thing she does when she meets her four AI agents? She gives them names. Not the designations the system assigned, SBL-7, GLT-04x, MKO-11, VOS-01, but names drawn from art history: Vinci, Dali, Michel, Rem. A small act of rebellion in a company that treats its agents like interchangeable software.</p>
+
+      <p>The series spans three volumes. In Volume 1, Huma arrives and learns that managing AI is less about control and more about trust. In Volume 2, the system breaks and she has to descend back to the floors she left behind to find what the company lost. In Volume 3, she builds a coalition, human and AI, and rewrites the mission from the inside.</p>
+
+      <p>The question running through all three: what does it mean to stay human when the system would rather you didn't?</p>
+
+      <p>That's the series. Now let me tell you how I actually made it.</p>
+
+      <h2>The Problem: The AI-Sameness Effect</h2>
+
+      <p>Huma's Agency was a story I needed to tell visually. One problem, I can't draw. So I had to work with AI to generate every panel, every character, every environment.</p>
+
+      <p>If you've spent any time with image generation tools, you know the trap. You start with a vision. You type a prompt. The output looks impressive for about three seconds, and then you realize it looks exactly like everything else that came out of that model that week. I call this the AI-sameness effect: the moment every idea starts converging into the same aesthetic slop. The same lighting. The same composition. The same vaguely cinematic, vaguely illustrated, completely interchangeable look.</p>
+
+      <p>The AI-sameness effect isn't a bug. It's what happens when you let the model's defaults do your creative thinking for you. And for this project, defaults were not an option. I needed a protagonist who looked the same across 32 panels. I needed AI agents that looked like literal classical art mediums, not holograms, not digital effects, but figures made of Da Vinci's sepia ink, Dali's surrealist oil paint, Michelangelo's fresco texture, and Rembrandt's chiaroscuro, rendered as if the medium itself became three-dimensional and started walking around.</p>
+
+      <p>I needed the human character to stay warm-toned in environments that were deliberately desaturated. I needed environments whose color temperature told you what floor of the building you were on without a single word of narration. And I needed all of this to hold together across three volumes and nearly a hundred frames.</p>
+
+      <p>None of that was going to happen by typing prompts and hoping for the best.</p>
+
+      <h2>The Process: Five Steps, From Notebook to Final Panel</h2>
+
+      <p>Here's how I built it. Five steps.</p>
+
+      <h3>Step 1, Document Everything</h3>
+
+      <p>I wrote everything down before I touched a single tool. The world. The characters. The rules. Analog first.</p>
+
+      <p>This sounds obvious. It isn't. The gravitational pull of AI tools is to start generating immediately, to open the interface, type a prompt, see what comes back, and iterate from there. That approach produces technically competent images with no soul. It's like building a house by pouring concrete before you've drawn a floorplan.</p>
+
+      <p>I started with a notebook. I wrote the world of Favor.ai: a 30-story building where the lower floors belong to humans, the middle floors belong to AI agents and the orchestration engine, the upper floors belong to the people who manage the agents, and the top floor belongs to The Board. I wrote character descriptions with enough specificity that someone else could draw them without asking me a question. Huma's burnt orange jacket. Her olive messenger bag. Her worn white sneakers. The way she always keeps her warmth even when the environment around her is drained to near-monochrome.</p>
+
+      <p>I wrote the rules of the visual system. Color temperature is geography: warm means human space, cool means corporate space, dark means agent space. The character always retains her warmth regardless of where she stands. Text never appears on the panels, all narration lives on a separate reading layer. Panel borders on Floor 12 are slightly irregular, hand-drawn. Panel borders on Floor 27 are razor-sharp and architectural.</p>
+
+      <p>None of this required AI. All of it was essential to making the AI work.</p>
+
+      <h3>Step 2, Build the Knowledge Base</h3>
+
+      <p>I stress-tested every assumption. A hundred questions, maybe more. What came out was a full character bible, a visual identity bible, a complete narrative arc across all three volumes, and frame-by-frame script drafts for each.</p>
+
+      <p>This is where I used Claude extensively, not to generate images, but to think. I sat with the AI and interrogated my own ideas. What's Huma's relationship with authority? What does Raj, her old mentor on Floor 12, actually think about her promotion? Why does Vinci evolve from clinical evaluator to trusted partner, and what breaks that process open? If the AI agents are rendered as art mediums, what does that mean for how they physically exist in the world? Do they have legs? Where do they fade out?</p>
+
+      <p>Each question produced pages. Those pages became four canonical documents: the character bible, the visual identity bible, the narrative arc, and the volume scripts. Everything that followed, every image prompt, every panel composition, every creative decision, had to be consistent with those documents. They were the creative guardrail. Not the AI. Not the model. My documents. My decisions. Written down and locked in before a single pixel was generated.</p>
+
+      <h3>Step 3, Build the Characters</h3>
+
+      <p>Using Gemini's character consistency API, I could feed reference images of each character and generate them from different angles, different lighting, different scenes, while keeping their face, hair, and look intact. Dozens of versions until the design felt mine, not the model's.</p>
+
+      <p>Character consistency is the hardest problem in AI-generated visual storytelling. If Huma looks even slightly different between two panels, the entire illusion collapses. So before I generated a single story panel, I built a reference library. This is where Claude Code entered the process, orchestrating the generation workflow. Multi-view character sheets: front, three-quarter, profile, back. Each character generated at least five times, evaluated, regenerated, evaluated again, until I had an approved "hero" reference that became the consistency anchor for everything else.</p>
+
+      <p>The AI agents were harder. The visual identity bible established a rule that I refused to compromise on: the agents are not holograms. They are not humans with a filter applied. They are not glowing wireframes. Each agent is the art medium itself, made three-dimensional and animate. Vinci is literally composed of Da Vinci's sepia ink cross-hatching. Dali is melting surrealist oil paint given form. Michel is cracked Renaissance fresco texture walking around. Rem is Rembrandt's chiaroscuro, deep shadow with amber highlights, shaped into a figure.</p>
+
+      <p>Getting the models to produce this consistently was the single hardest visual challenge in the entire project. Every prompt had to include explicit negative instructions: "NOT a hologram, NOT a digital effect, NOT neon glow." When one tool produced holographic results anyway, I switched to another. The primary engine was Gemini. The fallback for agent rendering was Flux Kontext Pro through fal.ai. Midjourney for specific reference work. The tools served the vision, not the other way around.</p>
+
+      <h3>Step 4, Build the Pipeline</h3>
+
+      <p>A custom five-layer image generation system. Subject. Medium. Environment. Composition. Mood. Every panel runs through that architecture.</p>
+
+      <p>This is where the process became an engineering problem as much as a creative one. I built the entire production pipeline inside Claude Code. Every image prompt follows the same five-layer structure. Layer one defines who is in the frame, what they're doing, and how they feel. Layer two defines how they're rendered, clean contemporary illustration for humans, specific art medium for agents. Layer three defines the environment and its color temperature. Layer four defines the camera angle, shot type, and depth of field. Layer five defines the mood and atmosphere.</p>
+
+      <p>Every panel was generated in multiple variants, typically three to five. Each variant was evaluated against a validation checklist: Is Huma's jacket the right shade of burnt orange? Is her messenger bag present? Are the agent art mediums correct? Is the environment color temperature telling the right story? Does the composition work at 1080×1350 portrait format for mobile? If it didn't pass every check, it was regenerated.</p>
+
+      <p>The total cost of image generation for Volume 1, 32 panels, hundreds of variants, dozens of reference sheets, was approximately twenty-four dollars. That number isn't a flex. It's a data point. The cost of generating images with AI is effectively zero. The cost that matters is the time and judgment you invest in making those images mean something.</p>
+
+      <h3>Step 5, The Human Work</h3>
+
+      <p>Rewrite. Recreate. The hard human work. Because the AI gives you material. You still have to make it mean something.</p>
+
+      <p>This is the step that doesn't photograph well. It's the hours spent looking at an image that's 90% right and figuring out why the last 10% matters. It's rewriting a narration line fourteen times because the first thirteen felt like AI wrote them, which they did. It's deciding that a panel's composition undermines the emotional beat it's supposed to carry, even though it's technically beautiful, and regenerating it from scratch with a completely different camera angle.</p>
+
+      <p>It's the judgment calls. The system recommended the safe path for the climax of Volume 1, a visually stunning composition that was emotionally flat. I overrode it. I tried something riskier. A more vulnerable framing, less cinematic, more intimate. It worked better. Not because the AI's version was bad. Because my version was mine.</p>
+
+      <p>That's the step most people skip. And it's the step that determines whether you made something, or something was made for you.</p>
+
+      <h2>What I Learned (Or: What Huma Already Knew)</h2>
+
+      <p>Making this project taught me three things I now carry into every conversation I have about AI transformation.</p>
+
+      <p><strong>The first: passivity is the real antagonist.</strong> Not AI. This is the thematic spine of Huma's Agency, and it turns out it's also the truth of working with AI as a creative tool. AI doesn't make you passive. You make yourself passive, and AI makes it easier to stay that way. Every time I accepted a default output instead of pushing for something better, the work got worse. Every time I overrode the model's safe recommendation and steered toward something riskier, the work got better. The AI-sameness effect is not a technology problem. It's a human problem. It's what happens when you stop trying.</p>
+
+      <p><strong>The second: curiosity is infrastructure, not a luxury.</strong> In the story, the AI system starts to degrade when humans stop generating new experiences and knowledge. It begins recycling what it already knows, optimizing in circles, collapsing into recursive self-reference. This was meant to be speculative fiction. It doesn't feel speculative anymore. Every AI system is downstream of human experience. When we stop exploring, creating, questioning, and engaging directly with the world, we stop generating the raw material that AI depends on. Curiosity isn't a personality trait. It's the fuel.</p>
+
+      <p><strong>The third: the process is the protection.</strong> The five steps I described above are not a production workflow. They're a creative defense system. Documentation before generation. Knowledge before prompts. Characters before scenes. Architecture before output. Judgment before acceptance. At every stage, the human decides first and the AI executes second. Not because AI can't make good decisions, it often can. But because the moment you reverse that order, you lose the thread of your own vision and end up with something that looks like everything else.</p>
+
+      <h2>Why I'm Telling You This</h2>
+
+      <p>I'm not a cartoonist. I'm not a graphic novelist. I'm a strategy consultant who had a story to tell and used every tool available to tell it. The irony of using AI to make a graphic novel about the dangers of letting AI think for you is not lost on me. In fact, it's the point.</p>
+
+      <p>Huma's Agency is a project about agency. Not Huma's. Yours. Every character who fails in this story fails because they stopped trying, stopped questioning, stopped contributing, stopped wanting something the system didn't suggest. Every character who succeeds does so by choosing to stay engaged when the easier path was to let the machine handle it.</p>
+
+      <p>I believe you can make something yours with AI. You just have to steer it. Every character, every scene, every frame. Beginning, middle, and end.</p>
+
+    </div>
+  </article>
+
+  <!-- Footer nav -->
+  <div class="making-of-footer">
+    <a href="/projects/humas-agency/" class="section-crossnav section-crossnav--to-fun">
+      <span style="font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 500;">
+        Huma's Agency
+      </span>
+      <span style="font-size: 16px;">&larr;</span>
+    </a>
+  </div>
+</ComicLayout>
