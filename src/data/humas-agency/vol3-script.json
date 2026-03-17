@@ -417,26 +417,6 @@
   },
   {
     "number": 21,
-    "slug": "the-dark-floors",
-    "title": "The Dark Floors",
-    "act": "act3",
-    "imagePath": "/volumes/vol-3/frame-21.webp",
-    "imageAlt": "Empty management floors 26-29 — dark holographic dashboards, chairs pushed back from desks, glass offices signaling absence rather than transparency.",
-    "aspectRatio": "3:4",
-    "readerText": "All the other floors, empty, unaware of the human-led revolution happening at the heart of Favor.ai.",
-    "displayNotes": {
-      "pacing": "slow",
-      "textAppearance": "word-by-word",
-      "imageAppearance": "fade",
-      "isFullScreenText": false,
-      "environmentZone": "floor27",
-      "isFrameBreak": true,
-      "specialEffect": "none",
-      "layout": "text-overlay"
-    }
-  },
-  {
-    "number": 22,
     "slug": "floor-30",
     "title": "Floor 30",
     "act": "act3",
@@ -456,7 +436,7 @@
     }
   },
   {
-    "number": 23,
+    "number": 22,
     "slug": "mr-j",
     "title": "Mr. J",
     "act": "act3",
@@ -476,7 +456,7 @@
     }
   },
   {
-    "number": 24,
+    "number": 23,
     "slug": "not-defeated",
     "title": "Not Defeated",
     "act": "act3",
@@ -498,7 +478,7 @@
     }
   },
   {
-    "number": 25,
+    "number": 24,
     "slug": "the-conversation",
     "title": "The Conversation",
     "act": "act3",
@@ -518,7 +498,7 @@
     }
   },
   {
-    "number": 26,
+    "number": 25,
     "slug": "what-do-we-value",
     "title": "What Do We Value",
     "act": "act4",
@@ -540,7 +520,7 @@
     }
   },
   {
-    "number": 27,
+    "number": 26,
     "slug": "vincis-choice",
     "title": "Vinci's Choice",
     "act": "act4",
@@ -560,7 +540,7 @@
     }
   },
   {
-    "number": 28,
+    "number": 27,
     "slug": "the-line",
     "title": "The Line",
     "act": "act4",
@@ -584,7 +564,7 @@
     }
   },
   {
-    "number": 29,
+    "number": 28,
     "slug": "the-update",
     "title": "The Update",
     "act": "act4",
@@ -604,7 +584,7 @@
     }
   },
   {
-    "number": 30,
+    "number": 29,
     "slug": "not-replaced",
     "title": "Not Replaced",
     "act": "act4",
@@ -624,7 +604,7 @@
     }
   },
   {
-    "number": 31,
+    "number": 30,
     "slug": "the-new-charter",
     "title": "The New Charter",
     "act": "coda",
@@ -644,7 +624,7 @@
     }
   },
   {
-    "number": 32,
+    "number": 31,
     "slug": "the-return",
     "title": "The Return",
     "act": "coda",
@@ -664,7 +644,7 @@
     }
   },
   {
-    "number": 33,
+    "number": 32,
     "slug": "the-office",
     "title": "The Office",
     "act": "coda",
@@ -684,7 +664,7 @@
     }
   },
   {
-    "number": 34,
+    "number": 33,
     "slug": "the-visitor",
     "title": "The Visitor",
     "act": "coda",
@@ -708,7 +688,7 @@
     }
   },
   {
-    "number": 35,
+    "number": 34,
     "slug": "the-light",
     "title": "The Light",
     "act": "coda",
@@ -728,7 +708,7 @@
     }
   },
   {
-    "number": 36,
+    "number": 35,
     "slug": "the-tower",
     "title": "The Tower",
     "act": "coda",

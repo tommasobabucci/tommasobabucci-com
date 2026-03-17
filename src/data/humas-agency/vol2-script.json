@@ -67,7 +67,7 @@
     "imagePath": "/volumes/vol-2/frame-04.webp",
     "imageAlt": "Wide shot of a Floor 27 open-plan area at the moment of the blackout.",
     "aspectRatio": "3:4",
-    "readerText": "It starts on a Tuesday. The holographic dashboards on Floor 27 flicker, reorganize themselves, and then go still. Like a machine catching its breath before deciding something important. Then the exhale, a notification.",
+    "readerText": "It starts on a Tuesday. The holographic dashboards on Floor 27 flicker, reorganize themselves, and then go still. Like a machine catching its breath before deciding something important. Then the exhale, an alarm.",
     "displayNotes": {
       "pacing": "slow",
       "textAppearance": "word-by-word",
@@ -149,7 +149,7 @@
     "imagePath": "/volumes/vol-2/frame-08.webp",
     "imageAlt": "A single holographic memo floating in an empty Floor 27 corridor.",
     "aspectRatio": "3:4",
-    "readerText": "A company-wide memo drops from Mr. J's account. Further instructions never come.",
+    "readerText": "A company-wide memo drops from Mr. J's account.",
     "dialogueSpeaker": "Mr. J",
     "dialogueText": "Exciting times!! Is this a routine optimization event? Not really... brings back memories from the revolution. I love a takeover! Please stand by for further instructions.",
     "displayNotes": {
@@ -669,7 +669,7 @@
     "imagePath": "/volumes/vol-2/frame-33.webp",
     "imageAlt": "Exterior night shot of the Favor.ai tower — a 30-story neo-brutalist corporate tower against a 2050 Chicago skyline at night.",
     "aspectRatio": "3:4",
-    "readerText": "The Favor.ai tower at night. Same glass and neon. Same three zones visible from outside: the warm lower floors, the dark agent layer, the clear upper floors. But tonight the upper floors are darker than usual. The deep optimization has dimmed them to almost nothing. Floors 26 through 29 are hollow. The agent layer pulses with activity that no human directed. And Floor 12 glows. Warm amber. Every light on. The floor that never stopped working is the floor that never stopped mattering.",
+    "readerText": "Tonight the upper floors are darker than usual. The deep optimization has dimmed them to almost nothing. Floors 26 through 29 are hollow. The agent layer pulses with activity that no human directed. And Floor 12 glows. Warm amber. Every light on. The floor that never stopped working is the floor that never stopped mattering.",
     "displayNotes": {
       "pacing": "slow",
       "textAppearance": "word-by-word",
@@ -689,7 +689,7 @@
     "imagePath": "/volumes/vol-2/frame-34.webp",
     "imageAlt": "Intimate wide shot on Floor 12 at night.",
     "aspectRatio": "3:4",
-    "readerText": "Two lights again. But different this time. On Floor 12, Huma and Raj, the charter between them. She came back to where the work is. And in her hands she holds the thing that could change what the work is for. Not a solution. A starting point. The question the building forgot to ask: what are we actually building, and why?",
+    "readerText": "On Floor 12, Huma and Raj, the charter between them. She came back to where the work is. And in her hands she holds the thing that could change what the work is for. Not a solution. A starting point. The question the building forgot to ask: what are we actually building, and why?",
     "displayNotes": {
       "pacing": "medium",
       "textAppearance": "fade",
